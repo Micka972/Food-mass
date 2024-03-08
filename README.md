@@ -1,14 +1,14 @@
-# Food-mass
-Projet team mass
+# Le <Footer>
+
+Conceived and designed by `Mass` in cooperation with `Wild Code School`.
+
 # Mon Projet Incroyable
 
-Bienvenue dans Mon Projet Incroyable ! Ce projet vise à vous faire gagner du temps en fournissantdes suggestions de retaurants. Il a été créé dans l'unique but de satisfaire nos formataires.
+Bienvenue dans Mon Projet Incroyable ! Ce projet vise à vous faire gagner du temps en fournissant des suggestions de retaurants. Il a été créé dans l'unique but de satisfaire nos formataires.
 
 ## Fonctionnalités
 
-- Fonctionnalité 1 : Description de la fonctionnalité et comment l'utiliser.
-- Fonctionnalité 2 : Description de la fonctionnalité et comment l'utiliser.
-- Fonctionnalité 3 : Description de la fonctionnalité et comment l'utiliser.
+- Fonctionnalité 1 : Bienvenue dans "Le <Footer>" - votre compagnon ultime pour trouver le restaurant parfait en seulement quatre questions! Que vous recherchiez une expérience gastronomique haut de gamme ou un petit café confortable, "Le <Footer>" est là pour vous guider à travers une recherche simple et efficace.
 
 ## Installation
 
@@ -22,10 +22,8 @@ Pour installer et exécuter ce projet localement, suivez ces étapes :
 ## Technologies Utilisées
 
 - Langage de Programmation : JavaScript
-- Framework Frontend : React.js
-- Framework Backend : Express.js
-- Base de Données : MongoDB
-- Autres Outils : Axios, Bootstrap, etc.
+- langage de balisage : HTML, CSS
+- Autres Outils : Google Slides
 
 ## Contribution
 
