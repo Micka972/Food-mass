@@ -1,4 +1,4 @@
-# Le Footer
+# Le Fooder
 
 Conceived and designed by `Mass` in cooperation with `Wild Code School`.
 
