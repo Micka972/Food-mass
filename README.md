@@ -1,4 +1,4 @@
-# Le <Footer>
+# Le Footer
 
 Conceived and designed by `Mass` in cooperation with `Wild Code School`.
 
@@ -8,7 +8,7 @@ Bienvenue dans Mon Projet Incroyable ! Ce projet vise à vous faire gagner du te
 
 ## Fonctionnalités
 
-- Fonctionnalité 1 : Bienvenue dans "Le <Footer>" - votre compagnon ultime pour trouver le restaurant parfait en seulement quatre questions! Que vous recherchiez une expérience gastronomique haut de gamme ou un petit café confortable, "Le <Footer>" est là pour vous guider à travers une recherche simple et efficace.
+- Fonctionnalité 1 : Bienvenue dans Le Footer - votre compagnon ultime pour trouver le restaurant parfait en seulement quatre questions! Que vous recherchiez une expérience gastronomique haut de gamme ou un petit café confortable, Le Footer est là pour vous guider à travers une recherche simple et efficace.
 
 ## Installation
 
