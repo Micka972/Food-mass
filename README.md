@@ -8,7 +8,7 @@ Bienvenue dans Mon Projet Incroyable ! Ce projet vise à vous faire gagner du te
 
 ## Fonctionnalités
 
-- Fonctionnalité 1 : Bienvenue dans Le Fooder - votre compagnon ultime pour trouver le restaurant parfait en seulement quatre questions! Que vous recherchiez une expérience gastronomique haut de gamme ou un petit café confortable, Le Footer est là pour vous guider à travers une recherche simple et efficace.
+- Fonctionnalité 1 : Bienvenue dans Le Fooder - votre compagnon ultime pour trouver le restaurant parfait en seulement quatre questions! Que vous recherchiez une expérience gastronomique haut de gamme ou un petit café confortable, Le Fooder est là pour vous guider à travers une recherche simple et efficace.
 
 ## Installation
 
@@ -22,7 +22,7 @@ Pour installer et exécuter ce projet localement, suivez ces étapes :
 ## Technologies Utilisées
 
 - Langage de Programmation : JavaScript
-- langage de balisage : HTML, CSS
+- langage de balisage : HTML, CSS, Markdown
 - Autres Outils : Google Slides
 
 ## Contribution
