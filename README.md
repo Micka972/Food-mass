@@ -39,7 +39,7 @@ Les contributions sont les bienvenues ! Si vous souhaitez contribuer à ce proje
 
 - Antoine Lelievre (@ATN35)
 - Stephanie Allen
-- Steven Bachimont
+- Steven Bachimont (@stevenbachimont)
 - Mickaël Démoléon
 
 ## Licence
