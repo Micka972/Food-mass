@@ -1,7 +1,7 @@
 function openModal(modalId) {
   document.getElementById(modalId).style.display = 'flex';
 }
-/*
+
 window.addEventListener('click', function(event) {
   let modals = document.getElementsByClassName('modal');
   for (let i = 0; i < modals.length; i++) {
@@ -9,7 +9,7 @@ window.addEventListener('click', function(event) {
       modals[i].style.display = 'none';
     }
   }
-});*/
+});
 
 function closeModal(modalId) {
   document.getElementById(modalId).style.display = 'none';
