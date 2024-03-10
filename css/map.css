@@ -1,7 +1,9 @@
-
+/*
+ici le css spécifique au systheme de map
+ */
 .Map-container {
     position: relative;
-    background-image: url("/img/map/quartier jour.png");
+    background-image: url("/img/map/quartier jour.png");/* ici l'image de fond de la map quartier des olivettes*/
     background-size: cover;
     width: 60%;
 }

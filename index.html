@@ -14,25 +14,26 @@
 </head>
 
 <body>
+<!-- le map container est l'emplacement de la carte du quartier et de l'interactivité des points d'emplacement des restaurents. se référer à map.js-->
 <div class="Map-container">
-    <svg id="Map-svg" viewBox="0 0 670 550" xml:space="preserve">
+    <svg id="Map-svg" viewBox="0 0 670 550" xml:space="preserve"><!-- ici viewBox et la taille dédiée à l'emplacement de la carte 670px par 550px -->
         <g>
-          <circle class="Pin" cx="160" cy="210" r="10" fill="#8a11ff" fill-opacity="0.5" />
+          <circle class="Pin1" cx="160" cy="210" r="10" fill="#8a11ff" fill-opacity="0.8" /> <!-- la balise "g" contient les cercles des restaurents et les positions -->
         </g>
         <g>
-          <circle class="Pin" cx="380" cy="210" r="10" fill="#8a11ff" fill-opacity="0.5" />
+          <circle class="Pin2" cx="380" cy="210" r="10" fill="#8a11ff" fill-opacity="0.8" /><!-- à noter que chaque 'pin' peut ici avoir une taille, une couleur et un emplacement personalisé -->
+        </g>
+        <g><!-- il est peut-être préférable de donner un id à la balise 'g' et laisser les cercle en classe 'pin'.-->
+          <circle class="Pin" cx="350" cy="300" r="10" fill="#8a11ff" fill-opacity="0.8" />
         </g>
         <g>
-          <circle class="Pin" cx="350" cy="300" r="10" fill="#8a11ff" fill-opacity="0.5" />
+          <circle class="Pin4" cx="260" cy="290" r="10" fill="#8a11ff" fill-opacity="0.8" />
         </g>
         <g>
-          <circle class="Pin" cx="260" cy="290" r="10" fill="#8a11ff" fill-opacity="0.5" />
+          <circle class="Pin" cx="480" cy="270" r="10" fill="#8a11ff" fill-opacity="0.8" />
         </g>
         <g>
-          <circle class="Pin" cx="480" cy="270" r="10" fill="#8a11ff" fill-opacity="0.5" />
-        </g>
-        <g>
-          <circle class="Pin" cx="270" cy="190" r="10" fill="#8a11ff" fill-opacity="0.5" />
+          <circle class="Pin" cx="270" cy="190" r="10" fill="#8a11ff" fill-opacity="0.8" />
         </g>
 
     </svg>
@@ -43,9 +44,11 @@
     gastronomique haut de gamme ou un petit café confortable,
     "MASS food" est là pour vous guider à travers une recherche simple et efficace.
 </p>
+
+<!-- les questions sont dans des modals, cela permet de les afficher par interaction de boutons. se référer a modal.js-->
 <button id="btn1" class="modal-btn">c'est partit !</button>
 
-<div id="modal1" class="modal">
+<div id="modal1" class="modal"><!-- Chaque modal est relié à app.js grace à son id, cela permettra l'interactivité avec la map et le tri des restaurants. -->
   <div class="modal-content" id="question1">
       <h2>PROCHE ?</h2>
       <button id="btn2" class="choice" onclick="checkAnswer1('Proche')">OUI</button>

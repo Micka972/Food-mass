@@ -1,4 +1,6 @@
-
+/*
+ici le css spécifique au systheme de modal
+ */
 
 .modal, #modal1, #modal2, #modal3, #modal4 {
   position: fixed;
