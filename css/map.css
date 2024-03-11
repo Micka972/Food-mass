@@ -1,0 +1,23 @@
+/*
+ici le css spécifique au systheme de map
+ */
+.Map-container {
+    position: relative;
+    background-image: url("/img/map/quartier jour.png");/* ici l'image de fond de la map quartier des olivettes*/
+    background-size: cover;
+    width: 60%;
+}
+
+#Map-svg {
+    width: 900px;
+    max-width: 100%;
+    height: 100%;
+}
+
+.pin {
+    transition: opacity 1000ms ease-in-out;
+}
+
+.hidden {
+    opacity: 0.5;
+}
