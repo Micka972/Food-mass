@@ -17,7 +17,7 @@ pins.forEach(pin => {
 
 
 
-// ci-dessous, c'est une expérimetation de clignotement de ceratains points.. à voir si c'est pertinant.
+// ci-dessous, c'est une expérimetation de clignotement de certains points.. à voir si c'est pertinant.
 const pin = document.querySelectorAll('.Pin2, .Pin4');// les pin2 et 4 ont été choisies pour cette expérience
 
 pin.forEach(pin => {
