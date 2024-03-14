@@ -9,7 +9,6 @@
     --secondary-text: "Raleway";
     --main-color-box: #f2c57c;
     --second-color-head-text: #426a5a;
-
 }
 
 body {
@@ -18,15 +17,12 @@ body {
     align-items: stretch;
     margin: 0;
     line-height: 1.5;
+    background-color: var(--couleur4);
 }
-
-
 
 * {
     box-sizing: border-box;
 }
-
-
 
 h1 {
     font-family: var(--main-text);
@@ -43,7 +39,7 @@ h1 {
     align-items: center;
     border-bottom-left-radius: 2rem;
     border-bottom-right-radius: 2rem;
-    padding: 1rem, 1rem, 1rem 1rem;
+    padding: 1rem;
     height: 20rem;
 }
 
@@ -52,32 +48,45 @@ h1 {
     margin-right: 2rem;
 }
 
-
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.Map {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: var(--couleur3);
-    border-radius: 2rem;
-    height: 20rem;
-    transform: scale(0.8);
+.map-container {
+    position: relative;
+    background-image: url("/img/map/quartier jour.png");/* ici l'image de fond de la map quartier des olivettes*/
+    background-size: cover;
+    width: 60%;
 }
 
+#map-svg {
+    width: 900px;
+    max-width: 100%;
+    height: 100%;
+}
 
+.pin {
+    transition: opacity 1000ms ease-in-out;
+}
 
-#quiz {
+.hidden {
+    opacity: 0.5;
+}
+
+.quiz {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: var(--couleur3);
-    border-radius: 2rem;
+    border-radius: 1rem;
+}
 
+button {
+    margin: 10px;
+    padding: 5px 20px;
+    cursor: pointer;
 }
 
 /*navbar*/
@@ -92,7 +101,6 @@ nav {
     position: relative;
 }
 
-/* On stylise chaque élément */
 .nav-item {
     color: #83818c;
     font-family: arial, sans-serif;
@@ -101,7 +109,6 @@ nav {
     position: relative;
 }
 
-/* Ici on met juste un petit élément avant chaque élément pour le rendre plus beau visuellement */
 .nav-item:before {
     content: "";
     position: absolute;
@@ -114,7 +121,6 @@ nav {
     transition: .3s;
 }
 
-/* Avec les dernières nouveautés de CSS, on peut changer les propriétés des éléments selon des conditions avec not */
 .nav-item:not(.is-active):hover:before {
     bottom: 0;
 }
@@ -122,7 +128,6 @@ nav {
     color: #333;
 }
 
-/* Stylisons notre indicateur */
 .nav-indicator {
     position: absolute;
     left: 0;

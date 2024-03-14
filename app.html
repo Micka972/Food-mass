@@ -4,8 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/quiz.css" />
-    <link rel="stylesheet" href="css/map.css">
 
     <link rel="stylesheet" href="css/app.css">
 
@@ -28,33 +26,33 @@
 
 
 <main>
-    <section class="Map"><!-- map -->
-    <div class="Map-container">
-        <svg id="Map-svg" viewBox="0 0 670 550" xml:space="preserve"><!-- ici viewBox et la taille dédiée à l'emplacement de la carte 670px par 550px -->
+    <!-- map -->
+    <div class="map-container">
+        <svg id="map-svg" viewBox="0 0 670 550" xml:space="preserve"><!-- ici viewBox et la taille dédiée à l'emplacement de la carte 670px par 550px -->
             <g>
-                <circle class="Pin1" cx="160" cy="210" r="10" fill="#8a11ff" fill-opacity="0.8" />
+                <circle class="pin1" cx="160" cy="210" r="10" fill="#8a11ff" fill-opacity="0.8" />
                 <!-- la balise "g" contient les cercles des restaurents et les positions -->
             </g>
             <g>
-                <circle class="Pin2" cx="380" cy="210" r="10" fill="#8a11ff" fill-opacity="0.8" />
+                <circle class="pin2" cx="380" cy="210" r="10" fill="#8a11ff" fill-opacity="0.8" />
                 <!-- à noter que chaque 'pin' peut ici avoir une taille, une couleur et un emplacement personalisé -->
             </g>
             <g><!-- il est peut-être préférable de donner un id à la balise 'g' et laisser les cercle en classe 'pin'.-->
-                <circle class="Pin" cx="350" cy="300" r="10" fill="#8a11ff" fill-opacity="0.8" />
+                <circle class="pin" cx="350" cy="300" r="10" fill="#8a11ff" fill-opacity="0.8" />
             </g>
             <g>
-                <circle class="Pin4" cx="260" cy="290" r="10" fill="#8a11ff" fill-opacity="0.8" />
+                <circle class="pin4" cx="260" cy="290" r="10" fill="#8a11ff" fill-opacity="0.8" />
             </g>
             <g>
-                <circle class="Pin" cx="480" cy="270" r="10" fill="#8a11ff" fill-opacity="0.8" />
+                <circle class="pin" cx="480" cy="270" r="10" fill="#8a11ff" fill-opacity="0.8" />
             </g>
             <g>
-                <circle class="Pin" cx="270" cy="190" r="10" fill="#8a11ff" fill-opacity="0.8" />
+                <circle class="pin" cx="270" cy="190" r="10" fill="#8a11ff" fill-opacity="0.8" />
             </g>
 
         </svg>
     </div>
-    </section>
+<section class="quiz">
     <div id="quiz">
         <h2>
             my lovely quiz
@@ -64,7 +62,7 @@
         <button id="noButton">No</button>
 
     </div>
-
+</section>
     <div id="result"></div>
 
     <div id="r1" style="display:none;">
