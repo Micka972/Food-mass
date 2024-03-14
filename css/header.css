@@ -1,0 +1,43 @@
+:root {
+    --main-color-box: #f2c57c;
+    --second-color-head-text: #426a5a;
+    --main-text: "Roboto";
+    --secondary-text: "Raleway";
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    line-height: 1.5;
+}
+
+h1 {
+    font-family: var(--main-text);
+    color: var(--second-color-head-text);
+    font-size: xxx-large;
+    margin-left: 2rem;
+}
+
+
+
+.head {
+
+    background-color: var(--main-color-box);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    padding: 1em, 1em, 1em 1em;
+
+
+}
+
+.logo {
+    width: 150px;
+    margin-right: 2rem;
+}
