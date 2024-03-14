@@ -1,0 +1,86 @@
+:root {
+    --main-color-box: #f2c57c;
+    --second-color-head-text: #426a5a;
+    --background-color: #7fb865;
+    --highlight-color: #ef6f6c;
+    --main-text: "Roboto";
+    --secondary-text: "Raleway";
+}
+
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    margin: 0;
+    background-color: var(--background-color);
+    ;
+}
+
+h2 {
+    text-align: center;
+    font-family: var(--main-text);
+    color: var(--second-color-head-text);
+    font-size: xxx-large;
+}
+
+
+p {
+    text-align: center;
+    font-family: var(--secondary-text);
+    color: var(--second-color-head-text);
+    font-size: x-large;
+
+}
+
+div {
+
+    background-color: var(--main-color-box);
+
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-div {
+    width: 90%;
+    height: 30%;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    padding-left: 2rem;
+}
+
+.button-div {
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+
+}
+
+#lancez-button {
+    display: flex;
+    padding: 1rem;
+    background-color: var(--second-color-head-text);
+    font-family: var(--secondary-text);
+    color: white;
+    border-color: black;
+    font-size: xx-large;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.main-body {
+    /* margin: 0; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-color);
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    ;
+}
