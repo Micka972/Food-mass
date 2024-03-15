@@ -56,7 +56,7 @@ main {
 
 .map-container {
     position: relative;
-    background-image: url("img/map/quartier jour.png");
+    background-image: url("https://raw.githubusercontent.com/Micka972/Food-mass/main/img/map/quartier%20jour.png");
     background-size: cover;
     transform: scale(80%);
 }
