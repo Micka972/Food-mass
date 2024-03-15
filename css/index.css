@@ -47,6 +47,7 @@ p {
     border: 3px solid black;
     border-radius: 15px;
     padding: 5px 15px 5px 15px;
+
 }
 
 
@@ -69,7 +70,8 @@ p {
     border-radius: 1rem;
     padding-left: 2rem;
     border: 3px solid black;
-    padding: 0;
+    padding: 5px 15px 5px 15px;
+
 }
 
 /* .button-div {
@@ -101,8 +103,8 @@ p {
     justify-content: center;
     align-items: center;
     background-color: var(--background-color);
-    gap: 3rem;
-    padding: 5px 15px 5px 15px;
+    gap: 5rem;
+    padding: 100px 15px 100px 15px;
     /* padding-top: 8rem;
     padding-bottom: 8rem; */
 
