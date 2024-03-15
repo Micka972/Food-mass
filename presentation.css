@@ -1,0 +1,16 @@
+*{
+  background-color: #7fb865;
+}
+:root{
+  --light-green: #7fb865;
+  --dark-green: #426a5a;
+  --beige: #f2c57c;
+  --red: #ef6f6c;
+}
+body{
+  box-sizing: border-box;
+}
+h1{
+  background: solid #f1f1f1;
+  border: #0000;
+}
