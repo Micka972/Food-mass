@@ -22,15 +22,7 @@ h2 {
     text-align: center;
     font-family: var(--main-text);
     color: var(--second-color-head-text);
-    font-size: x-large;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 3px solid black;
-    border-radius: 15px;
-    padding: 20px 50px 20px 50px;
+    font-size: xxx-large;
 }
 
 
@@ -38,18 +30,9 @@ p {
     text-align: center;
     font-family: var(--secondary-text);
     color: var(--second-color-head-text);
-    font-size: large;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 3px solid black;
-    border-radius: 15px;
-    padding: 5px 15px 5px 15px;
+    font-size: x-large;
+
 }
-
-
 
 /* div {
 
@@ -66,10 +49,9 @@ p {
     background-color: var(--main-color-box);
     width: 90%;
     height: 30%;
-    border-radius: 1rem;
+    border-radius: 15px;
     padding-left: 2rem;
     border: 3px solid black;
-    padding: 0;
 }
 
 /* .button-div {
@@ -89,7 +71,7 @@ p {
     font-size: xx-large;
     justify-content: center;
     align-items: center;
-    border-radius: 1rem;
+    border-radius: 15px;
 }
 
 
@@ -102,7 +84,6 @@ p {
     align-items: center;
     background-color: var(--background-color);
     gap: 3rem;
-    padding: 5px 15px 5px 15px;
     /* padding-top: 8rem;
     padding-bottom: 8rem; */
 
@@ -114,20 +95,7 @@ p {
     height: 30%;
     border-radius: 15px;
     padding-left: 2rem;
-    border: 3px solid black;
-    padding: 5px 15px 5px 15px;
+    border: 5px solid black;
 
 
 }
-
-/* .white-box-one {
-    width: 50%;
-    height: 30%;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 3px solid black;
-    border-radius: 15px;
-} */
