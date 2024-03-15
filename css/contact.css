@@ -1,11 +1,23 @@
 body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     background-color: var(--background-color);
 }
 
 main {
+    /* margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem; */
+    display: flex;
+    justify-content: center;
+    height: 90%;
+    width: 90%;
     background-color: var(--main-color-box);
     border: solid;
     border-radius: 2rem;
+    height: 150vw;
 
 }
 
@@ -13,6 +25,11 @@ h2 {
     color: var(--second-color-head-text);
 }
 
+form {
+    margin-bottom: 10%;
+}
+
 ul {
     list-style-type: none;
+
 }
