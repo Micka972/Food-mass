@@ -1,0 +1,14 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f2c57c;
+}
+
+h1 {
+    color: #426a5a;
+    background-color: aqua;
+}
+
+img {
+    padding-right: 10%;
+}

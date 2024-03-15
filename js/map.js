@@ -3,7 +3,7 @@
 
 
 // ci-dessous, la pin1 disparait en cliquant dessus, ainsi nous pourrons remplacer le clic par les appels de logique de tris de restaurants.
-const pins = document.querySelectorAll('.Pin1');
+const pins = document.querySelectorAll('.pin1');
 
 pins.forEach(pin => {
     pin.addEventListener('click', () => {// on clique dessus, (à remplacer par l'évenement correspondant au tri des restaurants
@@ -17,8 +17,11 @@ pins.forEach(pin => {
 
 
 
-// ci-dessous, c'est une expérimetation de clignotement de certains points.. à voir si c'est pertinant.
-const pin = document.querySelectorAll('.Pin2, .Pin4');// les pin2 et 4 ont été choisies pour cette expérience
+
+
+// ci-dessous, c'est une expérimetation de clignotement de ceratains points.. à voir si c'est pertinant.
+const pin = document.querySelectorAll('.pin2, .pin4');// les pin2 et 4 ont été choisies pour cette expérience
+
 
 pin.forEach(pin => {
     pin.classList.add('pin'); // les pins déclarée en variable ci-dessus, clignotent indépendament
