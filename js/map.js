@@ -17,8 +17,11 @@ pins.forEach(pin => {
 
 
 
+
+
 // ci-dessous, c'est une expérimetation de clignotement de ceratains points.. à voir si c'est pertinant.
 const pin = document.querySelectorAll('.pin2, .pin4');// les pin2 et 4 ont été choisies pour cette expérience
+
 
 pin.forEach(pin => {
     pin.classList.add('pin'); // les pins déclarée en variable ci-dessus, clignotent indépendament
