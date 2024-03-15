@@ -1,0 +1,135 @@
+:root {
+    --main-color-box: #f2c57c;
+    --second-color-head-text: #426a5a;
+    --background-color: #7fb865;
+    --highlight-color: #ef6f6c;
+    --main-text: "Roboto";
+    --secondary-text: "Raleway";
+}
+
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    margin: 0;
+    background-color: var(--background-color);
+    ;
+}
+
+h2 {
+    text-align: center;
+    font-family: var(--main-text);
+    color: var(--second-color-head-text);
+    font-size: x-large;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid black;
+    border-radius: 15px;
+    padding: 20px 50px 20px 50px;
+}
+
+
+p {
+    text-align: center;
+    font-family: var(--secondary-text);
+    color: var(--second-color-head-text);
+    font-size: large;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid black;
+    border-radius: 15px;
+    padding: 5px 15px 5px 15px;
+
+}
+
+
+
+/* div {
+
+    background-color: var(--main-color-box);
+
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    justify-content: center;
+    align-items: center;
+} */
+
+.text-div {
+
+    background-color: var(--main-color-box);
+    width: 90%;
+    height: 30%;
+    border-radius: 1rem;
+    padding-left: 2rem;
+    border: 3px solid black;
+    padding: 5px 15px 5px 15px;
+
+}
+
+/* .button-div {
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    border-color: black 5px;
+
+} */
+
+#lancez-button {
+    /* display: flex; */
+    padding: 1rem 2rem;
+    background-color: var(--second-color-head-text);
+    font-family: var(--secondary-text);
+    color: white;
+    border: 3px solid black;
+    font-size: xx-large;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+}
+
+
+.main-body {
+    /* margin: 0; */
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-color);
+    gap: 5rem;
+    padding: 100px 15px 100px 15px;
+    /* padding-top: 8rem;
+    padding-bottom: 8rem; */
+
+}
+
+.main-text {
+    background-color: var(--main-color-box);
+    width: 90%;
+    height: 30%;
+    border-radius: 15px;
+    padding-left: 2rem;
+    border: 3px solid black;
+    padding: 5px 15px 5px 15px;
+
+
+}
+
+/* .white-box-one {
+    width: 50%;
+    height: 30%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid black;
+    border-radius: 15px;
+} */
