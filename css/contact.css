@@ -6,12 +6,9 @@ body {
 }
 
 main {
-    /* margin-top: 2rem;
-    margin-bottom: 2rem;
-    margin-left: 1rem;
-    margin-right: 1rem; */
     display: flex;
     justify-content: center;
+    flex-direction: column;
     height: 90%;
     width: 90%;
     background-color: var(--main-color-box);
@@ -25,9 +22,9 @@ h2 {
     color: var(--second-color-head-text);
 }
 
-form {
+/* form {
     margin-bottom: 10%;
-}
+} */
 
 ul {
     list-style-type: none;
