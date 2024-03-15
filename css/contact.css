@@ -1,0 +1,32 @@
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--background-color);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 90%;
+    width: 90%;
+    background-color: var(--main-color-box);
+    border: solid;
+    border-radius: 2rem;
+    height: 150vw;
+
+}
+
+h2 {
+    color: var(--second-color-head-text);
+}
+
+/* form {
+    margin-bottom: 10%;
+} */
+
+ul {
+    list-style-type: none;
+
+}
