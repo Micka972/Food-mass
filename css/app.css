@@ -39,7 +39,7 @@ header {
     align-items: center;
     border-bottom-left-radius: 2rem;
     border-bottom-right-radius: 2rem;
-    height: 6rem;
+    height: 5rem;
     width: 100%;
 }
 
@@ -69,7 +69,6 @@ main {
     width: 900px;
     max-width: 100%;
     height: 100%;
-
 }
 
 .pin {
@@ -80,8 +79,20 @@ main {
     opacity: 0.5;
 }
 
-
 /*quiz*/
+
+.quiz {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--couleur1);
+    border-radius: 1rem;
+    border: 1px solid black;
+    width: 80%;
+    height: 10rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
 
 #quiz {
     display: flex;
@@ -99,21 +110,6 @@ main {
     margin-top: 5px;
     margin-bottom: 1rem;
 }
-
-
-.quiz {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: var(--couleur1);
-    border-radius: 1rem;
-    border: 1px solid black;
-    width: 80%;
-    height: 10rem;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-}
-
 
 
 #button {
@@ -179,7 +175,7 @@ footer>nav>a:hover {
 }
 
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 400px) {
 
     body {
 
@@ -209,10 +205,18 @@ footer>nav>a:hover {
         border-radius: 1rem;
         border: 1px solid black;
         width: 80%;
-        height: 10rem;
+        height: 25rem;
         margin-left: 2rem;
+        margin-top: 3rem;
     }
 
+    #quiz {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        margin-top: 6rem;
+    }
 
 }
 

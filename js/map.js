@@ -10,7 +10,7 @@ pins.forEach(pin => {
     });
 });
 
-const pin = document.querySelectorAll('.pin2, .pin4');
+const pin = document.querySelectorAll('.pin9, .pin10');
 
 pin.forEach(pin => {
     pin.classList.add('pin');
