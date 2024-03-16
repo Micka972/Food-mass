@@ -17,7 +17,6 @@ body {
     flex-direction: column;
     align-items: stretch;
     margin: 0;
-    line-height: 1.5;
     background-color: var(--couleur4);
 }
 
@@ -109,7 +108,7 @@ main {
     background-color: var(--couleur1);
     border-radius: 1rem;
     border: 1px solid black;
-    width: 90%;
+    width: 80%;
     height: 10rem;
     margin-top: 1rem;
     margin-bottom: 2rem;
@@ -140,7 +139,11 @@ button {
 }
 
 /*navbar*/
+
 nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
     background-color: var(--couleur1);
     border-top-right-radius: 1rem;
     border-top-left-radius: 1rem;
@@ -148,7 +151,12 @@ nav {
     flex-direction: row;
     align-content: center;
     justify-content: center;
+    border-top: 1px solid black;
+    padding: 10px 0;
 }
+
+
+
 
 .nav-item {
     color: #83818c;
@@ -169,5 +177,44 @@ footer>nav>a:hover {
     transform: scale(120%);
     cursor: pointer;
 }
+
+
+@media only screen and (min-width: 768px) {
+
+    body {
+
+        }
+
+    header {
+          height: 6rem;
+    }
+
+    main {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+
+    }
+
+
+    .map-container {
+
+    }
+
+    .quiz {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--couleur1);
+        border-radius: 1rem;
+        border: 1px solid black;
+        width: 80%;
+        height: 10rem;
+        margin-left: 2rem;
+    }
+
+
+}
+
 
 
