@@ -1,66 +1,66 @@
 let restaurants = [
     {
-        name: "Restaurant1",
+        name: "LU",
         id: "r1",
-        expensive: false,
-        far: false,
-        meat: false,
+        expensive: true,
+        far: true,
+        meat: true,
     },
     {
-        name: "Restaurant2",
+        name: "Honoré",
         id: "r2",
         expensive: false,
         far: false,
-        meat: true,
-    },
-    {
-        name: "Restaurant3",
-        id: "r3",
-        expensive: false,
-        far: true,
         meat: false,
     },
     {
-        name: "Restaurant4",
-        id: "r4",
+        name: "Chez Canelle",
+        id: "r3",
         expensive: false,
-        far: true,
+        far: false,
         meat: true,
     },
     {
-        name: "Restaurant5",
+        name: "La Mangouste",
+        id: "r4",
+        expensive: false,
+        far: false,
+        meat: true,
+    },
+    {
+        name: "Ichizen",
         id: "r5",
-        expensive: true,
+        expensive: false,
         far: false,
         meat: false,
     },
     {
-        name: "Restaurant6",
+        name: "Le Lion et l'agneau",
         id: "r6",
         expensive: true,
         far: false,
         meat: true,
     },
     {
-        name: "Restaurant7",
+        name: "Le Square",
         id: "r7",
-        expensive: true,
-        far: true,
-        meat: false,
+        expensive: false,
+        far: false,
+        meat: true,
     },
     {
-        name: "Restaurant8",
+        name: "La Cantine Fermière",
         id: "r8",
-        expensive: true,
-        far: true,
+        expensive: false,
+        far: false,
         meat: true,
     },
 ];
 
 let questions = [
-    { criteria: "expensive", displayText: "Do you have a big budget?" },
-    { criteria: "far", displayText: "Do you feel like walking?" },
-    { criteria: "meat", displayText: "Do you eat meat?" },
+    { criteria: "expensive", displayText: "Pour un gros repas pour plus de 25€ ?" },
+    { criteria: "far", displayText: "Prêt pour marcher plus de 5mn ?" },
+    { criteria: "meat", displayText: "Mangez-vous de la viande ?" },
 ];
 
 
@@ -99,59 +99,50 @@ function displayResult() {
 
 function handleUserInput(userInput) {
     switch (currentIndex) {
-        case 0:
+        case 0://cher
             if (userInput === false) {
-                document.querySelectorAll('.pin5, .pin6, .pin7, .pin8').forEach(pin => {
+                document.querySelectorAll('.pin6, .pin1').forEach(pin => {
                     if (pin.style.display !== 'none') {
                         pin.style.display = 'none';
                     }
                 });
             }
             if (userInput === true) {
-                document.querySelectorAll('.pin1, .pin2, .pin3, .pin4').forEach(pin => {
+                document.querySelectorAll('.pin1, .pin2, .pin3, .pin4, .pin5, .pin7, .pin8').forEach(pin => {
                     if (pin.style.display !== 'none') {
                         pin.style.display = 'none';
                     }
                 });
             }
             break;
-        case 1:
+        case 1://loin
             if (userInput === false) {
-                document.querySelectorAll('.pin7, .pin3, .pin4').forEach(pin => {
+                document.querySelectorAll('.pin1').forEach(pin => {
                     if (pin.style.display !== 'none') {
                         pin.style.display = 'none';
                     }
                 });
             }
             if (userInput === true) {
-                document.querySelectorAll('.pin2, .pin8').forEach(pin => {
+                document.querySelectorAll('.pin2, .pin3, .pin8, .pin4, .pin5, .pin6, .pin7').forEach(pin => {
                     if (pin.style.display !== 'none') {
                         pin.style.display = 'none';
                     }
                 });
             }
             break;
-        case 2:
+        case 2://viande
             if (userInput === false) {
-                document.querySelectorAll('.pin2, .pin6').forEach(pin => {
+                document.querySelectorAll('.pin3, .pin6, .pin4, .pin7, .pin8').forEach(pin => {
                     if (pin.style.display !== 'none') {
                         pin.style.display = 'none';
                     }
                 });
             }
             if (userInput === true) {
-                document.querySelectorAll('.pin3, .pin7').forEach(pin => {
+                document.querySelectorAll('.pin2, .pin5').forEach(pin => {
                     if (pin.style.display !== 'none') {
                         pin.style.display = 'none';
-                    }
-                });
-            }
-            break;
-        case 3:
-            if (userInput === false) {
-                document.querySelectorAll('.pin1, .pin6').forEach(pin => {
-                    if (pin.style.display !== 'none') {
-                        pin.style.display = 'block';
                     }
                 });
             }
@@ -178,7 +169,7 @@ noButton.addEventListener("click", () => {
 
 
 displayQuestion();
-displayMap();
+
 
 
 
