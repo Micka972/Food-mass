@@ -22,15 +22,18 @@ h2 {
     text-align: center;
     font-family: var(--main-text);
     color: var(--second-color-head-text);
-    font-size: x-large;
+    font-size: xx-large;
     background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 3px solid black;
-    border-radius: 15px;
+    border: 1px solid black;
+    border-radius: 1rem;
     padding: 20px 50px 20px 50px;
+    /* border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;*/
 }
 
 
@@ -38,15 +41,18 @@ p {
     text-align: center;
     font-family: var(--secondary-text);
     color: var(--second-color-head-text);
-    font-size: large;
+    font-size: x-large;
     background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 3px solid black;
-    border-radius: 15px;
+    border: 1px solid black;
+    border-radius: 1rem;
     padding: 5px 15px 5px 15px;
+    /*border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;*/
 
 }
 
@@ -69,9 +75,11 @@ p {
     height: 30%;
     border-radius: 1rem;
     padding-left: 2rem;
-    border: 3px solid black;
+    border: 1px solid black;
     padding: 5px 15px 5px 15px;
-
+    /*border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;*/
 }
 
 /* .button-div {
@@ -81,18 +89,32 @@ p {
 
 } */
 
-#lancez-button {
+.lancez-button {
     /* display: flex; */
     padding: 1rem 2rem;
     background-color: var(--second-color-head-text);
     font-family: var(--secondary-text);
     color: white;
-    border: 3px solid black;
+    border: 1px solid black;
     font-size: xx-large;
     justify-content: center;
     align-items: center;
     border-radius: 1rem;
+    /*border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;*/
+    transition: all 200ms ease-in-out;
+
 }
+
+.lancez-button:hover {
+    transform: scale(1.1);
+    background-color: var(--highlight-color);
+    cursor: pointer;
+
+}
+
+
 
 
 .main-body {
@@ -103,23 +125,37 @@ p {
     justify-content: center;
     align-items: center;
     background-color: var(--background-color);
-    gap: 5rem;
-    padding: 100px 15px 100px 15px;
-    /* padding-top: 8rem;
-    padding-bottom: 8rem; */
+    gap: 3rem;
+    /* padding: 100px 15px 100px 15px; */
 
+
+}
+
+@media(min-width: 900px) {
+    .main-body {
+        gap: 5rem;
+        padding: 100px 15px 100px 15px;
+
+    }
 }
 
 .main-text {
     background-color: var(--main-color-box);
     width: 90%;
     height: 30%;
-    border-radius: 15px;
+    border-radius: 1rem;
     padding-left: 2rem;
-    border: 3px solid black;
+    border: 1px solid black;
     padding: 5px 15px 5px 15px;
+    /*border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;*/
 
 
+}
+
+.main-body>div {
+    max-width: 720px;
 }
 
 /* .white-box-one {
@@ -128,6 +164,7 @@ p {
     background-color: white;
     display: flex;
     flex-direction: column;
+
     justify-content: center;
     align-items: center;
     border: 3px solid black;
