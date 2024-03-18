@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="abba06e6-4825-44f0-9050-640fb699c9d7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/js/test map.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.html" beforeDir="false" afterPath="$PROJECT_DIR$/app.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/interactivetest.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/interactivetest.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,8 +58,8 @@
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/img" />
       <recent name="$PROJECT_DIR$/js" />
+      <recent name="$PROJECT_DIR$/img" />
       <recent name="$PROJECT_DIR$/css" />
     </key>
   </component>
@@ -82,6 +84,7 @@
       <workItem from="1710604192447" duration="4541000" />
       <workItem from="1710614039783" duration="11379000" />
       <workItem from="1710695225159" duration="4269000" />
+      <workItem from="1710773305149" duration="2751000" />
     </task>
     <servers />
   </component>

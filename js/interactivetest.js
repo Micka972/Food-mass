@@ -59,7 +59,7 @@ let restaurants = [
 
 let questions = [
     { criteria: "expensive", displayText: "Pour un gros repas pour plus de 25€ ?" },
-    { criteria: "far", displayText: "Prêt pour marcher plus de 5mn ?" },
+    { criteria: "far", displayText: "Prêt pour marcher plus de 2mn ?" },
     { criteria: "meat", displayText: "Mangez-vous de la viande ?" },
 ];
 
