@@ -17,7 +17,7 @@ body {
     flex-direction: column;
     align-items: stretch;
     margin: 0;
-    background-color: var(--couleur4);
+    background-color: var(--couleur3);
 }
 
 * {
@@ -27,7 +27,7 @@ body {
 h1 {
     font-family: var(--main-text);
     color: var(--couleur4);
-    font-size: 2rem;
+    font-size: 1rem;
     margin-left: 1rem;
 }
 
@@ -37,8 +37,8 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    border-bottom-left-radius: 2rem;
-    border-bottom-right-radius: 2rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
     height: 5rem;
     width: 100%;
 }
@@ -47,6 +47,7 @@ header {
     width: 5rem;
     margin-right: 2rem;
 }
+
 
 main {
     display: flex;
@@ -87,7 +88,6 @@ main {
     align-items: center;
     background-color: var(--couleur1);
     border-radius: 1rem;
-    border: 1px solid black;
     width: 80%;
     height: 10rem;
     margin-top: 1rem;
@@ -147,12 +147,8 @@ nav {
     flex-direction: row;
     align-content: center;
     justify-content: center;
-    border-top: 1px solid black;
     padding: 10px 0;
 }
-
-
-
 
 .nav-item {
     color: #83818c;
@@ -170,7 +166,7 @@ footer>nav>a {
 footer>nav>a:hover {
     text-decoration: none;
     color: var(--couleur6);
-    transform: scale(120%);
+    transform: scale(130%);
     cursor: pointer;
 }
 
@@ -203,7 +199,6 @@ footer>nav>a:hover {
         align-items: center;
         background-color: var(--couleur1);
         border-radius: 1rem;
-        border: 1px solid black;
         width: 80%;
         height: 25rem;
         margin-left: 2rem;
@@ -217,7 +212,15 @@ footer>nav>a:hover {
         align-items: center;
         margin-top: 6rem;
     }
+    button {
 
+        transition: all 200ms ease-in-out;
+    }
+
+    button:hover {
+        background-color: var(--couleur5);
+        scale: 110%;
+    }
 }
 
 
