@@ -7,26 +7,47 @@ body {
 
 main {
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    height: 90%;
-    width: 90%;
+    margin: 3%;
     background-color: var(--main-color-box);
     border: solid;
     border-radius: 2rem;
-    height: 150vw;
+    height: 160vw;
 
 }
 
 h2 {
+    font-size: 2.5em;
     color: var(--second-color-head-text);
+    display: flex;
+    justify-content: center;
 }
 
-/* form {
-    margin-bottom: 10%;
-} */
+form {
+    text-align: center;
+    height: 100vw;
+
+}
+
+form input {
+    width: 98%;
+    height: 10vw;
+    border: solid;
+    border-radius: 1rem;
+}
+
+form textarea {
+    width: 98%;
+    height: 60vw;
+    border: solid;
+    border-radius: 1rem;
+}
 
 ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
     list-style-type: none;
+    padding-left: 0%;
 
 }
