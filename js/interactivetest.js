@@ -2,43 +2,43 @@ let restaurants = [
     {
         name: "LU",
         id: "r1",
-        expensive: true,
+        expensive: false,
         far: true,
         meat: true,
     },
     {
         name: "Honoré",
         id: "r2",
-        expensive: false,
+        expensive: true,
         far: false,
-        meat: false,
+        meat: true,
     },
     {
         name: "Chez Canelle",
         id: "r3",
-        expensive: false,
+        expensive: true,
         far: false,
-        meat: true,
+        meat: false,
     },
     {
         name: "La Mangouste",
         id: "r4",
-        expensive: false,
-        far: false,
-        meat: true,
+        expensive: true,
+        far: true,
+        meat: false,
     },
     {
         name: "Ichizen",
         id: "r5",
         expensive: false,
-        far: false,
+        far: true,
         meat: false,
     },
     {
         name: "Le Lion et l'agneau",
         id: "r6",
         expensive: true,
-        far: false,
+        far: true,
         meat: true,
     },
     {
@@ -46,7 +46,7 @@ let restaurants = [
         id: "r7",
         expensive: false,
         far: false,
-        meat: true,
+        meat: false,
     },
     {
         name: "La Cantine Fermière",
@@ -58,9 +58,9 @@ let restaurants = [
 ];
 
 let questions = [
-    { criteria: "expensive", displayText: "Pour un gros repas pour plus de 25€ ?" },
-    { criteria: "far", displayText: "Prêt pour marcher plus de 2mn ?" },
-    { criteria: "meat", displayText: "Mangez-vous de la viande ?" },
+    { criteria: "expensive", displayText: "à emporter ?" },
+    { criteria: "far", displayText: "à plus de 2mn ?" },
+    { criteria: "meat", displayText: "végétarien ?" },
 ];
 
 
@@ -101,14 +101,14 @@ function handleUserInput(userInput) {
     switch (currentIndex) {
         case 0://cher
             if (userInput === false) {
-                document.querySelectorAll('.pin6, .pin1').forEach(pin => {
+                document.querySelectorAll('.pin6, .pin2,  .pin3, .pin4').forEach(pin => {
                     if (pin.style.display !== 'none') {
                         pin.style.display = 'none';
                     }
                 });
             }
             if (userInput === true) {
-                document.querySelectorAll('.pin1, .pin2, .pin3, .pin4, .pin5, .pin7, .pin8').forEach(pin => {
+                document.querySelectorAll('.pin1, .pin5, .pin7, .pin8').forEach(pin => {
                     if (pin.style.display !== 'none') {
                         pin.style.display = 'none';
                     }
@@ -117,14 +117,14 @@ function handleUserInput(userInput) {
             break;
         case 1://loin
             if (userInput === false) {
-                document.querySelectorAll('.pin1').forEach(pin => {
+                document.querySelectorAll(' .pin4, .pin5, .pin6, .pin1').forEach(pin => {
                     if (pin.style.display !== 'none') {
                         pin.style.display = 'none';
                     }
                 });
             }
             if (userInput === true) {
-                document.querySelectorAll('.pin2, .pin3, .pin8, .pin4, .pin5, .pin6, .pin7').forEach(pin => {
+                document.querySelectorAll('.pin3, .pin2, .pin8, .pin7').forEach(pin => {
                     if (pin.style.display !== 'none') {
                         pin.style.display = 'none';
                     }
@@ -133,14 +133,14 @@ function handleUserInput(userInput) {
             break;
         case 2://viande
             if (userInput === false) {
-                document.querySelectorAll('.pin3, .pin6, .pin4, .pin7, .pin8').forEach(pin => {
+                document.querySelectorAll('.pin6, .pin2, .pin1, .pin8').forEach(pin => {
                     if (pin.style.display !== 'none') {
                         pin.style.display = 'none';
                     }
                 });
             }
             if (userInput === true) {
-                document.querySelectorAll('.pin2, .pin5').forEach(pin => {
+                document.querySelectorAll('.pin4, .pin3,  .pin7, .pin5').forEach(pin => {
                     if (pin.style.display !== 'none') {
                         pin.style.display = 'none';
                     }

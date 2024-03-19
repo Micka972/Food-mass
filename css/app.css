@@ -17,7 +17,7 @@ body {
     flex-direction: column;
     align-items: stretch;
     margin: 0;
-    background-color: var(--couleur4);
+    background-color: var(--couleur3);
 }
 
 * {
@@ -27,7 +27,7 @@ body {
 h1 {
     font-family: var(--main-text);
     color: var(--couleur4);
-    font-size: 2rem;
+    font-size: 1rem;
     margin-left: 1rem;
 }
 
@@ -47,6 +47,7 @@ header {
     width: 5rem;
     margin-right: 2rem;
 }
+
 
 main {
     display: flex;
@@ -149,9 +150,6 @@ nav {
     padding: 10px 0;
 }
 
-
-
-
 .nav-item {
     color: #83818c;
     font-family: var(--main-text);
@@ -214,7 +212,15 @@ footer>nav>a:hover {
         align-items: center;
         margin-top: 6rem;
     }
+    button {
 
+        transition: all 200ms ease-in-out;
+    }
+
+    button:hover {
+        background-color: var(--couleur5);
+        scale: 110%;
+    }
 }
 
 
