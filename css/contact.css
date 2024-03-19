@@ -1,18 +1,49 @@
+:root {
+    --couleur1: #f2c57c;
+    --couleur2: #ddae7e;
+    --couleur3: #7fb865;
+    --couleur4: #426a5a;
+    --couleur5: #ef6f6c;
+    --couleur6: #000000;
+    --couleur7: #757575;
+    --main-text: "Roboto";
+    --secondary-text: "Raleway";
+    --main-color-box: #f2c57c;
+    --second-color-head-text: #426a5a;
+}
+
 body {
     display: flex;
     justify-content: center;
     flex-direction: column;
     background-color: var(--background-color);
+    height: 180vw;
 }
+
+h1 {
+    font-family: var(--main-text);
+    color: var(--couleur4);
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+
+
+.logo {
+    width: 5rem;
+    margin-right: 2rem;
+}
+
+
 
 main {
     display: flex;
     flex-direction: column;
     margin: 3%;
     background-color: var(--main-color-box);
-    border: solid;
+    border: 1px;
     border-radius: 2rem;
-    height: 160vw;
+    height: 150vw;
+    margin-top: 10vw;
 
 }
 
@@ -32,22 +63,82 @@ form {
 form input {
     width: 98%;
     height: 10vw;
-    border: solid;
+    border: 1px;
     border-radius: 1rem;
 }
 
 form textarea {
     width: 98%;
     height: 60vw;
-    border: solid;
+    border: 1px;
     border-radius: 1rem;
 }
 
 ul {
     display: flex;
     flex-direction: column;
-    gap: 1vw;
+    gap: 2vw;
     list-style-type: none;
     padding-left: 0%;
+    margin-top: 5vw;
+}
 
+.submit {
+
+    /* display: flex; */
+    padding: 1rem 2rem;
+    background-color: var(--second-color-head-text);
+    font-family: var(--secondary-text);
+    color: white;
+    border: 1px solid black;
+    font-size: xx-large;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    transition: all 200ms ease-in-out;
+
+}
+
+div {
+    margin-top: 10vw;
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--couleur1);
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    border-top: 1px solid black;
+    padding: 10px 0;
+}
+
+
+
+
+.nav-item {
+    color: #83818c;
+    font-family: var(--main-text);
+    padding: 1rem;
+    margin: 0 6px;
+    position: relative;
+}
+
+footer>nav>a {
+    text-decoration: none;
+    color: var(--couleur6);
+}
+
+footer>nav>a:hover {
+    text-decoration: none;
+    color: var(--couleur6);
+    transform: scale(120%);
+    cursor: pointer;
 }
