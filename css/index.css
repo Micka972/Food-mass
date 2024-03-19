@@ -1,0 +1,172 @@
+:root {
+    --main-color-box: #f2c57c;
+    --second-color-head-text: #426a5a;
+    --background-color: #7fb865;
+    --highlight-color: #ef6f6c;
+    --main-text: "Roboto";
+    --secondary-text: "Raleway";
+}
+
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    margin: 0;
+    background-color: var(--background-color);
+    ;
+}
+
+h2 {
+    text-align: center;
+    font-family: var(--main-text);
+    color: var(--second-color-head-text);
+    font-size: xx-large;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 1rem;
+    padding: 20px 50px 20px 50px;
+    /* border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;*/
+}
+
+
+p {
+    text-align: center;
+    font-family: var(--secondary-text);
+    color: var(--second-color-head-text);
+    font-size: x-large;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 1rem;
+    padding: 5px 15px 5px 15px;
+    /*border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;*/
+
+}
+
+
+
+/* div {
+
+    background-color: var(--main-color-box);
+
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    justify-content: center;
+    align-items: center;
+} */
+
+.text-div {
+
+    background-color: var(--main-color-box);
+    width: 90%;
+    height: 30%;
+    border-radius: 1rem;
+    padding-left: 2rem;
+    border: 1px solid black;
+    padding: 5px 15px 5px 15px;
+    /*border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;*/
+}
+
+/* .button-div {
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    border-color: black 5px;
+
+} */
+
+.lancez-button {
+    /* display: flex; */
+    padding: 1rem 2rem;
+    background-color: var(--second-color-head-text);
+    font-family: var(--secondary-text);
+    color: white;
+    border: 1px solid black;
+    font-size: xx-large;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    /*border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;*/
+    transition: all 200ms ease-in-out;
+
+}
+
+.lancez-button:hover {
+    transform: scale(1.1);
+    background-color: var(--highlight-color);
+    cursor: pointer;
+
+}
+
+
+
+
+.main-body {
+    /* margin: 0; */
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-color);
+    gap: 3rem;
+    /* padding: 100px 15px 100px 15px; */
+
+
+}
+
+@media(min-width: 900px) {
+    .main-body {
+        gap: 5rem;
+        padding: 100px 15px 100px 15px;
+
+    }
+}
+
+.main-text {
+    background-color: var(--main-color-box);
+    width: 90%;
+    height: 30%;
+    border-radius: 1rem;
+    padding-left: 2rem;
+    border: 1px solid black;
+    padding: 5px 15px 5px 15px;
+    /*border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;*/
+
+
+}
+
+.main-body>div {
+    max-width: 720px;
+}
+
+/* .white-box-one {
+    width: 50%;
+    height: 30%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+    border: 3px solid black;
+    border-radius: 15px;
+} */

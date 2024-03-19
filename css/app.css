@@ -1,0 +1,224 @@
+:root {
+    --couleur1: #f2c57c;
+    --couleur2: #ddae7e;
+    --couleur3: #7fb865;
+    --couleur4: #426a5a;
+    --couleur5: #ef6f6c;
+    --couleur6: #000000;
+    --couleur7: #757575;
+    --main-text: "Roboto";
+    --secondary-text: "Raleway";
+    --main-color-box: #f2c57c;
+    --second-color-head-text: #426a5a;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin: 0;
+    background-color: var(--couleur4);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: var(--main-text);
+    color: var(--couleur4);
+    font-size: 2rem;
+    margin-left: 1rem;
+}
+
+header {
+    background-color: var(--couleur1);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    height: 5rem;
+    width: 100%;
+}
+
+.logo {
+    width: 5rem;
+    margin-right: 2rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.map-container {
+    position: relative;
+    background-color: var(--couleur7);
+    background-image: url("https://raw.githubusercontent.com/Micka972/Food-mass/main/img/map/quartier%20jour.png");
+    background-size: cover;
+    transform: scale(80%);
+    border-radius: 1rem;
+    border: 1px solid black;
+    width: 100%;
+}
+
+#map-svg {
+    width: 900px;
+    max-width: 100%;
+    height: 100%;
+}
+
+.pin {
+    transition: opacity 1000ms ease-in-out;
+}
+
+.hidden {
+    opacity: 0.5;
+}
+
+/*quiz*/
+
+.quiz {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--couleur1);
+    border-radius: 1rem;
+    border: 1px solid black;
+    width: 80%;
+    height: 10rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+#quiz {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+#quiz>h2 {
+    margin-top: 0;
+    margin-bottom: 3px;
+}
+
+#question {
+    margin-top: 5px;
+    margin-bottom: 1rem;
+}
+
+
+#button {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 80%;
+}
+
+button {
+    width: 4rem;
+    height: 3rem;
+    background-color: var(--couleur4);
+    font-family: var(--secondary-text);
+    color: white;
+    border: 1px solid black;
+    font-size: 1rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+}
+
+/*navbar*/
+
+nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--couleur1);
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    border-top: 1px solid black;
+    padding: 10px 0;
+}
+
+
+
+
+.nav-item {
+    color: #83818c;
+    font-family: var(--main-text);
+    padding: 1rem;
+    margin: 0 6px;
+    position: relative;
+}
+
+footer>nav>a {
+    text-decoration: none;
+    color: var(--couleur6);
+}
+
+footer>nav>a:hover {
+    text-decoration: none;
+    color: var(--couleur6);
+    transform: scale(120%);
+    cursor: pointer;
+}
+
+
+@media only screen and (min-width: 550px) {
+
+    body {
+
+        }
+
+    header {
+          height: 6rem;
+    }
+
+    main {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+
+    }
+
+
+    .map-container {
+
+    }
+
+    .quiz {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--couleur1);
+        border-radius: 1rem;
+        border: 1px solid black;
+        width: 80%;
+        height: 25rem;
+        margin-left: 2rem;
+        margin-top: 3rem;
+    }
+
+    #quiz {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        margin-top: 6rem;
+    }
+
+}
+
+
+

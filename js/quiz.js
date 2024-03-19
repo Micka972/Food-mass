@@ -127,10 +127,12 @@ function displayResult() {
     // document.getElementById("result").innerHTML = JSON.stringify(matchingRestaurants);
 
     // loop through matchingRestaurants and for each matching restaurant set its html to visible
-    for (let i = 0; i < matchingRestaurants.length; i++) {
-        document.getElementById(matchingRestaurants[i].id).style.display = "block";
-    }
+    // for (let i = 0; i < matchingRestaurants.length; i++) {
+    //     document.getElementById(matchingRestaurants[i].id).style.display = "block";
+    // }
 
+    // loop to display div replaced with redirect to restaurant page.
+    window.location.replace(`/${matchingRestaurants[0].id}.html`)
 };
 // function to take the criteria of questions array and its current index
 // and to fill the empty responeses object with the key value pairs.
