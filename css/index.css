@@ -3,6 +3,7 @@
     --second-color-head-text: #426a5a;
     --background-color: #7fb865;
     --highlight-color: #ef6f6c;
+    --couleur6: #000000;
     --main-text: "Roboto";
     --secondary-text: "Raleway";
 }
@@ -16,6 +17,30 @@ body {
     margin: 0;
     background-color: var(--background-color);
     ;
+}
+
+h1 {
+    font-family: var(--main-text);
+    color: var(--second-color-head-text);
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+
+header {
+    background-color: var(--main-color-box);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    height: 5rem;
+    width: 100%;
+}
+
+.logo {
+    width: 5rem;
+    margin-right: 2rem;
 }
 
 h2 {
@@ -107,12 +132,17 @@ p {
 
 }
 
-.lancez-button:hover {
-    transform: scale(1.1);
-    background-color: var(--highlight-color);
-    cursor: pointer;
+@media(min-width: 900px) {
 
+
+    .lancez-button:hover {
+        transform: scale(1.1);
+        background-color: var(--highlight-color);
+        cursor: pointer;
+
+    }
 }
+
 
 
 
@@ -170,3 +200,40 @@ p {
     border: 3px solid black;
     border-radius: 15px;
 } */
+nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--main-color-box);
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    border-top: 1px solid black;
+    padding: 10px 0;
+}
+
+
+
+
+.nav-item {
+    color: #67656d;
+    font-family: var(--main-text);
+    padding: 1rem;
+    margin: 0 6px;
+    position: relative;
+}
+
+footer>nav>a {
+    text-decoration: none;
+    color: var(--couleur6);
+}
+
+footer>nav>a:hover {
+    text-decoration: none;
+    color: var(--couleur6);
+    transform: scale(120%);
+    cursor: pointer;
+}
