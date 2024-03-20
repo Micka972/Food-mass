@@ -1,5 +1,4 @@
-/* On fait en sorte que chaque élément contienne sa marge interne avec box-sizing et on retire les traits qui sont par défaut sur les liens */
-* {
+On fait en sorte que chaque élément contienne sa marge interne avec box-sizing et on retire les traits qui sont par défaut sur les liens * {
   box-sizing: border-box;
   text-decoration: none;
 }

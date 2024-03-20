@@ -12,19 +12,31 @@
     --second-color-head-text: #426a5a;
 }
 
-body {
+
+
+header {
+    background-color: var(--main-color-box);
     display: flex;
-    justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    height: 5rem;
+    width: 100%;
+}
+
+
+body {
     background-color: var(--background-color);
-    height: 180vw;
 }
 
 h1 {
     font-family: var(--main-text);
-    color: var(--couleur4);
+    color: var(--second-color-head-text);
     font-size: 1rem;
     margin-left: 1rem;
+
 }
 
 
@@ -36,14 +48,24 @@ h1 {
 
 
 main {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    margin: 3%;
+    
     background-color: var(--main-color-box);
     border: 1px;
     border-radius: 2rem;
+    
+    margin-top: 10vw;*/
+
     height: 150vw;
-    margin-top: 10vw;
+    margin: 3%;
+    background-color: var(--main-color-box);
+    width: 90%;
+    height: 30%;
+    border-radius: 1rem;
+    padding-left: 2rem;
+    border: 1px solid black;
+    padding: 5px 15px 5px 15px;
 
 }
 
@@ -54,10 +76,11 @@ h2 {
     justify-content: center;
 }
 
+/* Form part */
+
 form {
     text-align: center;
     height: 100vw;
-
 }
 
 form input {
@@ -69,7 +92,7 @@ form input {
 
 form textarea {
     width: 98%;
-    height: 60vw;
+    height: 20vw;
     border: 1px;
     border-radius: 1rem;
 }
@@ -83,27 +106,29 @@ ul {
     margin-top: 5vw;
 }
 
-.submit {
+#button {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 80%;
+}
 
-    /* display: flex; */
-    padding: 1rem 2rem;
-    background-color: var(--second-color-head-text);
+button {
+    width: 4rem;
+    height: 3rem;
+    background-color: var(--couleur4);
     font-family: var(--secondary-text);
     color: white;
     border: 1px solid black;
-    font-size: xx-large;
+    font-size: 1rem;
     justify-content: center;
     align-items: center;
     border-radius: 1rem;
-    transition: all 200ms ease-in-out;
-
 }
 
-div {
-    margin-top: 10vw;
-    display: flex;
-    justify-content: center;
-}
+/*navbar*/
 
 nav {
     position: fixed;
@@ -116,12 +141,8 @@ nav {
     flex-direction: row;
     align-content: center;
     justify-content: center;
-    border-top: 1px solid black;
     padding: 10px 0;
 }
-
-
-
 
 .nav-item {
     color: #83818c;
@@ -139,6 +160,23 @@ footer>nav>a {
 footer>nav>a:hover {
     text-decoration: none;
     color: var(--couleur6);
-    transform: scale(120%);
+    transform: scale(130%);
     cursor: pointer;
+}
+
+
+@media only screen and (min-width: 550px) {
+
+    /* body {}
+
+    header {
+        height: 6rem;
+    }
+
+    main {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+
+    } */
 }
