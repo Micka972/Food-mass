@@ -60,12 +60,11 @@ main {
     height: 150vw;
     margin: 3%;
     background-color: var(--main-color-box);
-    width: 90%;
     height: 30%;
     border-radius: 1rem;
     padding-left: 2rem;
     border: 1px solid black;
-    padding: 5px 15px 5px 15px;
+    padding: 5px 15px 100px 15px;
 
 }
 
@@ -80,19 +79,19 @@ h2 {
 
 form {
     text-align: center;
-    height: 100vw;
+    height: 80%M;
 }
 
 form input {
     width: 98%;
-    height: 10vw;
+    height: 8vw;
     border: 1px;
     border-radius: 1rem;
 }
 
 form textarea {
     width: 98%;
-    height: 20vw;
+    height: 16vw;
     border: 1px;
     border-radius: 1rem;
 }
@@ -106,26 +105,34 @@ ul {
     margin-top: 5vw;
 }
 
-#button {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    width: 80%;
+/* button */
+
+div {
+    padding: auto;
 }
 
-button {
-    width: 4rem;
-    height: 3rem;
+.bouton-envoi {
+    display: flex;
+    padding: 1rem 2rem;
     background-color: var(--couleur4);
     font-family: var(--secondary-text);
     color: white;
     border: 1px solid black;
-    font-size: 1rem;
+    font-size: xx-large;
     justify-content: center;
     align-items: center;
     border-radius: 1rem;
+    /*border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;*/
+    transition: all 200ms ease-in-out;
+}
+
+.bouton-envoi:hover {
+    transform: scale(1.1);
+    background-color: var(--couleur5);
+    cursor: pointer;
+
 }
 
 /*navbar*/
@@ -145,7 +152,7 @@ nav {
 }
 
 .nav-item {
-    color: #83818c;
+    color: #67656d;
     font-family: var(--main-text);
     padding: 1rem;
     margin: 0 6px;
