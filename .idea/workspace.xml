@@ -85,6 +85,8 @@
       <workItem from="1710695225159" duration="4269000" />
       <workItem from="1710773305149" duration="2751000" />
       <workItem from="1710859856667" duration="3729000" />
+      <workItem from="1710927096449" duration="754000" />
+      <workItem from="1710928089877" duration="5245000" />
     </task>
     <servers />
   </component>
@@ -122,7 +124,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/feature/amelioration" />
+                        <option value="origin/main" />
                       </list>
                     </value>
                   </entry>
