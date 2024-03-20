@@ -15,19 +15,11 @@ pins.forEach(pin => {
 });
 */
 
-/*
-let pin = document.querySelectorAll('.pin1, .pin2, .pin3 .pin4, .pin5, .pin6, .pin7, .pin8');
 
-pins.forEach(pin => {
+let pins = document.querySelectorAll('.pin1, .pin2, .pin3 .pin4, .pin5, .pin6, .pin7, .pin8');
 
-    pin.addEventListener('click', () => {
 
-        let url = pin.parentElement.querySelector('a').getAttribute('href');
 
-        window.open(url, '_blank');
-    });
-});
-*/
 
 let restaurants = [
     {
@@ -125,7 +117,7 @@ function displayResult() {
             restaurant.far === responses.far &&
             restaurant.meat === responses.meat);
     });
-
+   /* window.location.replace(`/${matchingRestaurants[0].id}.html`)*/
 
     console.log("Matching Restaurants:", matchingRestaurants);
     for (let i = 0; i < matchingRestaurants.length; i++) {
@@ -176,23 +168,27 @@ function handleUserInput(userInput) {
                         pin.style.display = 'none';
                     }
                 });
+                pins.forEach(pin => {
+                    pin.addEventListener('click', () => {
+                        let url = pin.parentElement.querySelector('a').getAttribute('href');
+                        window.open(url, '_blank');
+                    });
+                });
             }
             if (userInput === true) {
                 document.querySelectorAll('.pin4, .pin3, .pin7, .pin5').forEach(pin => {
                     if (pin.style.display !== 'none') {
                         pin.style.display = 'none';
-// test pin cliquable !!
+                    }
+                });
+                pins.forEach(pin => {
                     pin.addEventListener('click', () => {
                         let url = pin.parentElement.querySelector('a').getAttribute('href');
                         window.open(url, '_blank');
                     });
-                    }// test pin cliquable !!
                 });
             }
             break;
-
-
-
     }
 
 
