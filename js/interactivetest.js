@@ -1,25 +1,6 @@
 
 
-/*
-const pins = document.querySelectorAll('.pin1, .pin2, .pin3 .pin4, .pin5, .pin6, .pin7, .pin8')
-
-pins.forEach(pin => {
-    pin.addEventListener('click', () => {
-        if (pin.style.display !== 'none') {
-            pin.style.display = 'none';
-        } else {
-            pin.style.display ='block';
-        }
-
-    });
-});
-*/
-
-
 let pins = document.querySelectorAll('.pin1, .pin2, .pin3 .pin4, .pin5, .pin6, .pin7, .pin8');
-
-
-
 
 let restaurants = [
     {
@@ -166,6 +147,7 @@ function handleUserInput(userInput) {
                 document.querySelectorAll('.pin6, .pin2, .pin1, .pin8').forEach(pin => {
                     if (pin.style.display !== 'none') {
                         pin.style.display = 'none';
+
                     }
                 });
                 pins.forEach(pin => {
@@ -173,12 +155,15 @@ function handleUserInput(userInput) {
                         let url = pin.parentElement.querySelector('a').getAttribute('href');
                         window.open(url, '_blank');
                     });
+                    pin.setAttribute('r', '20');
+
                 });
             }
             if (userInput === true) {
                 document.querySelectorAll('.pin4, .pin3, .pin7, .pin5').forEach(pin => {
                     if (pin.style.display !== 'none') {
                         pin.style.display = 'none';
+
                     }
                 });
                 pins.forEach(pin => {
@@ -186,7 +171,11 @@ function handleUserInput(userInput) {
                         let url = pin.parentElement.querySelector('a').getAttribute('href');
                         window.open(url, '_blank');
                     });
+                    pin.setAttribute('r', '20');
+
+
                 });
+
             }
             break;
     }
