@@ -22,7 +22,7 @@
 <body>
 
     <header>
-        <h1 id=" index">aussi facile d'avoir faim</h1>
+        <h1 id=" index">aussi facile d'avoir faim !</h1>
         <img class="logo" src="img/logoFOODER.png" alt=" Fooder logo" />
     </header>
     <main>
@@ -47,7 +47,12 @@
             </ul>
         </form>
         <div>
-            <input class="submit" type="button" value="Envoyer" />
+            <button class="bouton-envoi" onclick="myFunction()">Envoyer</button>
+            <script>
+                function myFunction() {
+                    alert("Message envoyé !");
+                }
+            </script>
         </div>
 
 
@@ -62,6 +67,7 @@
 
 
     <script src="js/navbar.js"></script>
+    <!-- <script src="js/contact.js"></script>-->
 
 </body>
 
