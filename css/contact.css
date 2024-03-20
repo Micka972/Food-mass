@@ -34,9 +34,9 @@ body {
 h1 {
     font-family: var(--main-text);
     color: var(--second-color-head-text);
-    font-size: xxx-large;
-    margin-left: 2rem;
-    margin: 0;
+    font-size: 1rem;
+    margin-left: 1rem;
+
 }
 
 
@@ -48,14 +48,24 @@ h1 {
 
 
 main {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    margin: 3%;
+    
     background-color: var(--main-color-box);
     border: 1px;
     border-radius: 2rem;
+    
+    margin-top: 10vw;*/
+
     height: 150vw;
-    margin-top: 10vw;
+    margin: 3%;
+    background-color: var(--main-color-box);
+    width: 90%;
+    height: 30%;
+    border-radius: 1rem;
+    padding-left: 2rem;
+    border: 1px solid black;
+    padding: 5px 15px 5px 15px;
 
 }
 
@@ -82,7 +92,7 @@ form input {
 
 form textarea {
     width: 98%;
-    height: 60vw;
+    height: 20vw;
     border: 1px;
     border-radius: 1rem;
 }
