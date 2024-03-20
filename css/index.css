@@ -1,4 +1,18 @@
 :root {
+    --couleur1: #f2c57c;
+    --couleur2: #ddae7e;
+    --couleur3: #7fb865;
+    --couleur4: #426a5a;
+    --couleur5: #ef6f6c;
+    --couleur6: #000000;
+    --couleur7: #757575;
+    --main-text: "Roboto";
+    --secondary-text: "Raleway";
+    --main-color-box: #f2c57c;
+    --second-color-head-text: #426a5a;
+}
+
+/*:root {
     --main-color-box: #f2c57c;
     --second-color-head-text: #426a5a;
     --background-color: #7fb865;
@@ -6,7 +20,7 @@
     --couleur6: #000000;
     --main-text: "Roboto";
     --secondary-text: "Raleway";
-}
+}*/
 
 * {
     box-sizing: border-box;
@@ -15,25 +29,25 @@
 
 body {
     margin: 0;
-    background-color: var(--background-color);
+    background-color: var(--couleur3);
     ;
 }
 
 h1 {
     font-family: var(--main-text);
-    color: var(--second-color-head-text);
+    color: var(--couleur4);
     font-size: 1rem;
     margin-left: 1rem;
 }
 
 header {
-    background-color: var(--main-color-box);
+    background-color: var(--couleur1);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    border-bottom-left-radius: 2rem;
-    border-bottom-right-radius: 2rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
     height: 5rem;
     width: 100%;
 }
@@ -46,14 +60,14 @@ header {
 h2 {
     text-align: center;
     font-family: var(--main-text);
-    color: var(--second-color-head-text);
-    font-size: xx-large;
+    color: var(--couleur4);
+    font-size: x-large;
     background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     border-radius: 1rem;
     padding: 20px 50px 20px 50px;
     /* border-top: 2px solid black;
@@ -65,14 +79,14 @@ h2 {
 p {
     text-align: center;
     font-family: var(--secondary-text);
-    color: var(--second-color-head-text);
-    font-size: x-large;
+    color: var(--couleur4);
+    font-size: large;
     background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
+    /* border: 1px solid black;*/
     border-radius: 1rem;
     padding: 5px 15px 5px 15px;
     /*border-top: 2px solid black;
@@ -95,7 +109,7 @@ p {
 
 .text-div {
 
-    background-color: var(--main-color-box);
+    background-color: var(--couleur1);
     width: 90%;
     height: 30%;
     border-radius: 1rem;
@@ -117,7 +131,7 @@ p {
 .lancez-button {
     /* display: flex; */
     padding: 1rem 2rem;
-    background-color: var(--second-color-head-text);
+    background-color: var(--couleur4);
     font-family: var(--secondary-text);
     color: white;
     border: 1px solid black;
@@ -132,12 +146,12 @@ p {
 
 }
 
-@media(min-width: 900px) {
+@media only screen and (min-width: 550px) {
 
 
     .lancez-button:hover {
         transform: scale(1.1);
-        background-color: var(--highlight-color);
+        background-color: var(--couleur5);
         cursor: pointer;
 
     }
@@ -154,23 +168,23 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--background-color);
-    gap: 3rem;
+    background-color: var(--couleur3);
+    gap: 4rem;
     /* padding: 100px 15px 100px 15px; */
 
 
 }
 
-@media(min-width: 900px) {
+@media only screen and (min-width: 550px) {
     .main-body {
-        gap: 5rem;
+        gap: 6rem;
         padding: 100px 15px 100px 15px;
 
     }
 }
 
 .main-text {
-    background-color: var(--main-color-box);
+    background-color: var(--couleur1);
     width: 90%;
     height: 30%;
     border-radius: 1rem;
@@ -204,14 +218,14 @@ nav {
     position: fixed;
     bottom: 0;
     width: 100%;
-    background-color: var(--main-color-box);
+    background-color: var(--couleur1);
     border-top-right-radius: 1rem;
     border-top-left-radius: 1rem;
     display: flex;
     flex-direction: row;
     align-content: center;
     justify-content: center;
-    border-top: 1px solid black;
+
     padding: 10px 0;
 }
 
