@@ -63,6 +63,8 @@ header {
     /*added proportional height*/
     height: 10svh;
     width: 100%;
+    /* top: 0;
+    position: fixed; */
 }
 
 .logo {
@@ -263,8 +265,8 @@ footer {
 
 nav {
     /*comment out fix*/
-    /* position: fixed; */
-    /* bottom: 0; */
+    /* position: fixed;
+    bottom: 0; */
     width: 100%;
     /* height: 5rem; */
     /*add pro height*/
