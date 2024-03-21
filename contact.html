@@ -5,13 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/header.css">
     <!-- <link rel="stylesheet" href="css/navbar.css"> -->
     <link rel="stylesheet" href="css/contact.css">
     <!-- <link rel="stylesheet" href="css/app.css"> -->
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -28,24 +25,30 @@
     <main>
 
         <!-- write yo stuff here -->
-
-
-        <form action="/ma-page-de-traitement" method="post">
-            <ul>
-                <li>
-                    <input type="text" id="name" name="user_name" placeholder="  Votre nom" />
-                </li>
-                <li>
-                    <input type="email" id="mail" name="user_mail" placeholder="  Votre adresse mail" />
-                </li>
-                <li>
-                    <input type="number" id="phone" name="user_phone" placeholder="  Votre numéro de téléphone" />
-                </li>
-                <li>
-                    <textarea id="msg" name="user_message" placeholder="  Ecrivez votre message ici..."></textarea>
-                </li>
-            </ul>
-        </form>
+        <div>
+            <h2>Laissez nous un commentaire, ou candidater comme restaurant</h2>
+        </div>
+        <div>
+            <form action="/ma-page-de-traitement" method="post">
+                <ul>
+                    <li>
+                        <input type="text" id="name" name="user_name" placeholder="  Votre nom" />
+                    </li>
+                    <li>
+                        <input type="email" id="mail" name="user_mail" placeholder="  Votre adresse mail" />
+                    </li>
+                    <li>
+                        <input type="number" id="phone" name="user_phone" placeholder="  Votre numéro de téléphone" />
+                    </li>
+                    <li>
+                        <textarea id="msg" name="user_message" placeholder="  Ecrivez votre message ici..."></textarea>
+                    </li>
+                </ul>
+            </form>
+        </div>
+        <div>
+            <img id="img_contact" src="img\picjumbo.com_HNCK5665.jpg">
+        </div>
         <div>
             <button class="bouton-envoi" onclick="myFunction()">Envoyer</button>
             <script>

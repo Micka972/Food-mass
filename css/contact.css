@@ -12,6 +12,14 @@
     --second-color-head-text: #426a5a;
 }
 
+body {
+    background-color: var(--couleur3);
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
 
 
 header {
@@ -27,9 +35,7 @@ header {
 }
 
 
-body {
-    background-color: var(--background-color);
-}
+
 
 h1 {
     font-family: var(--main-text);
@@ -47,30 +53,39 @@ h1 {
 
 
 
-main {
-    /* display: flex;
+/*main {
+    display: flex;
     flex-direction: column;
-    
-    background-color: var(--main-color-box);
-    border: 1px;
-    border-radius: 2rem;
-    
-    margin-top: 10vw;*/
 
-    height: 150vw;
+
+
+
     margin: 3%;
     background-color: var(--main-color-box);
-    height: 30%;
-    border-radius: 1rem;
-    padding-left: 2rem;
-    border: 1px solid black;
-    padding: 5px 15px 100px 15px;
 
+    border-radius: 1rem;
+
+    border: 1px solid black;
+    padding: 1rem 1rem 17vh 1rem;
+}*/
+
+main {
+    display: flex;
+    margin: 3%;
+    background-color: var(--main-color-box);
+    border-radius: 1rem;
+    border: 1px solid black;
+    padding: 1rem 1rem 17vh 1rem;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 h2 {
-    font-size: 2.5em;
-    color: var(--second-color-head-text);
+    font-size: 1rem;
+    font-family: var(--main-text);
+    color: var(--couleur4);
     display: flex;
     justify-content: center;
 }
@@ -79,7 +94,7 @@ h2 {
 
 form {
     text-align: center;
-    height: 80%M;
+    height: 80%;
 }
 
 form input {
@@ -105,15 +120,18 @@ ul {
     margin-top: 5vw;
 }
 
+/*image*/
+
+#img_contact {
+    max-width: 100%;
+    height: auto;
+}
+
 /* button */
 
-div {
-    padding: auto;
-}
 
 .bouton-envoi {
     display: flex;
-    padding: 1rem 2rem;
     background-color: var(--couleur4);
     font-family: var(--secondary-text);
     color: white;
@@ -172,18 +190,37 @@ footer>nav>a:hover {
 }
 
 
-@media only screen and (min-width: 550px) {
+@media screen and (min-width: 500px) {
 
-    /* body {}
-
-    header {
-        height: 6rem;
-    }
 
     main {
         display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
+        flex-direction: row;
 
-    } */
+        /*background-color: var(--main-color-box);
+        border: 1px;
+        border-radius: 2rem;
+        
+        margin-top: 10vw;*/
+
+
+        margin: 3%;
+        background-color: var(--main-color-box);
+
+        border-radius: 1rem;
+
+        border: 1px solid black;
+        padding: 1rem 1rem 17vh 1rem;
+    }
+
+    form {
+        text-align: center;
+        height: 5rem;
+    }
+
+    #img_contact {
+        max-width: 50%;
+        height: auto;
+    }
+
 }
