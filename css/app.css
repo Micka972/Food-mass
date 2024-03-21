@@ -171,6 +171,7 @@ nav {
     position: fixed;
     bottom: 0;
     width: 100%;
+    height: 5rem;
     background-color: var(--couleur1);
     border-top-right-radius: 1rem;
     border-top-left-radius: 1rem;
@@ -204,12 +205,10 @@ footer>nav>a:hover {
 
 @media only screen and (min-width: 550px) {
 
-    body {
-
-        }
+    body {}
 
     header {
-          height: 6rem;
+        height: 6rem;
     }
 
     main {
@@ -220,9 +219,7 @@ footer>nav>a:hover {
     }
 
 
-    .map-container {
-
-    }
+    .map-container {}
 
     .quiz {
         display: flex;
@@ -243,6 +240,7 @@ footer>nav>a:hover {
         align-items: center;
         margin-top: 6rem;
     }
+
     button {
 
         transition: all 200ms ease-in-out;
@@ -252,6 +250,7 @@ footer>nav>a:hover {
         background-color: var(--couleur5);
         scale: 110%;
     }
+
 
     #result {
         margin-top: 3rem;
