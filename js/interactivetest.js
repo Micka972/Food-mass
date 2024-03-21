@@ -94,6 +94,17 @@ function displayResult() {
     });
 
 
+    // Modify result pins
+    pins.forEach(pin => {
+        pin.addEventListener('click', () => {
+            let url = pin.parentElement.querySelector('a').getAttribute('href');
+            window.open(url, '_blank');
+        });
+        pin.setAttribute('r', '20');
+
+
+    });
+
     console.log("Matching Restaurants:", matchingRestaurants);
     for (let i = 0; i < matchingRestaurants.length; i++) {
         document.getElementById(matchingRestaurants[i].id).style.display = "block";

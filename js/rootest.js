@@ -16,13 +16,24 @@ function updateRootColors() {
     document.documentElement.style.setProperty('--couleur4', '#000000');
 
     document.documentElement.style.setProperty('--couleur5', getRandomColor());
-    /* document.documentElement.style.setProperty('--couleur6', getRandomColor());
-    document.documentElement.style.setProperty('--couleur7', getRandomColor()); */
 }
 
 window.addEventListener('DOMContentLoaded', () => {
     const image = document.getElementById('logo');
     image.addEventListener('click', updateRootColors);
 });
-/*window.addEventListener('load', updateRootColors);*/
+
+
+const reloadLinks = document.querySelectorAll('.reload-link');
+
+reloadLinks.forEach(link => {
+    link.addEventListener('click', function(event) {
+        // Recharge la page après un court délai
+        setTimeout(() => {
+            location.reload();
+        }, 100);
+    });
+});
+
+
 
