@@ -1,10 +1,13 @@
-let pins = document.querySelectorAll('.pin1, .pin2, .pin3 .pin4, .pin5, .pin6, .pin7, .pin8');
+
+
+
+let pins = document.querySelectorAll('.pin1, .pin2, .pin3, .pin4, .pin5, .pin6, .pin7, .pin8');
+
 
 let restaurants = [
     {
         name: "LU",
         id: "r1",
-        pin: "pin1",
         expensive: false,
         far: true,
         meat: true,
@@ -12,7 +15,6 @@ let restaurants = [
     {
         name: "Honoré",
         id: "r2",
-        pin: "pin2",
         expensive: true,
         far: false,
         meat: true,
@@ -20,7 +22,6 @@ let restaurants = [
     {
         name: "Chez Canelle",
         id: "r3",
-        pin: "pin3",
         expensive: true,
         far: false,
         meat: false,
@@ -28,7 +29,6 @@ let restaurants = [
     {
         name: "La Mangouste",
         id: "r4",
-        pin: "pin4",
         expensive: true,
         far: true,
         meat: false,
@@ -36,7 +36,6 @@ let restaurants = [
     {
         name: "Ichizen",
         id: "r5",
-        pin: "pin5",
         expensive: false,
         far: true,
         meat: false,
@@ -44,7 +43,6 @@ let restaurants = [
     {
         name: "Le Lion et l'agneau",
         id: "r6",
-        pin: "pin6",
         expensive: true,
         far: true,
         meat: true,
@@ -52,7 +50,6 @@ let restaurants = [
     {
         name: "Le Square",
         id: "r7",
-        pin: "pin7",
         expensive: false,
         far: false,
         meat: false,
@@ -60,7 +57,6 @@ let restaurants = [
     {
         name: "La Cantine Fermière",
         id: "r8",
-        pin: "pin8",
         expensive: false,
         far: false,
         meat: true,
@@ -96,7 +92,7 @@ function displayResult() {
             restaurant.far === responses.far &&
             restaurant.meat === responses.meat);
     });
-    /* window.location.replace(`/${matchingRestaurants[0].id}.html`)*/
+
 
     console.log("Matching Restaurants:", matchingRestaurants);
     for (let i = 0; i < matchingRestaurants.length; i++) {
@@ -105,10 +101,9 @@ function displayResult() {
     }
 }
 
-
 function handleUserInput(userInput) {
     switch (currentIndex) {
-        case 0://cher
+        case 0://take away
             if (userInput === false) {
                 document.querySelectorAll('.pin6, .pin2,  .pin3, .pin4').forEach(pin => {
                     if (pin.style.display !== 'none') {
@@ -124,7 +119,7 @@ function handleUserInput(userInput) {
                 });
             }
             break;
-        case 1://loin
+        case 1://2mn
             if (userInput === false) {
                 document.querySelectorAll(' .pin4, .pin5, .pin6, .pin1').forEach(pin => {
                     if (pin.style.display !== 'none') {
@@ -140,12 +135,11 @@ function handleUserInput(userInput) {
                 });
             }
             break;
-        case 2: // Viande
+        case 2: // Végé
             if (userInput === false) {
                 document.querySelectorAll('.pin6, .pin2, .pin1, .pin8').forEach(pin => {
                     if (pin.style.display !== 'none') {
                         pin.style.display = 'none';
-
                     }
                 });
                 pins.forEach(pin => {
@@ -154,14 +148,12 @@ function handleUserInput(userInput) {
                         window.open(url, '_blank');
                     });
                     pin.setAttribute('r', '20');
-
                 });
             }
             if (userInput === true) {
                 document.querySelectorAll('.pin4, .pin3, .pin7, .pin5').forEach(pin => {
                     if (pin.style.display !== 'none') {
                         pin.style.display = 'none';
-
                     }
                 });
                 pins.forEach(pin => {
@@ -170,10 +162,7 @@ function handleUserInput(userInput) {
                         window.open(url, '_blank');
                     });
                     pin.setAttribute('r', '20');
-
-
                 });
-
             }
             break;
     }

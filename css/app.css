@@ -105,7 +105,7 @@ main {
 }
 
 #quiz>h2 {
-    margin-top: 0;
+    margin-top: 1rem;
     margin-bottom: 3px;
     font-size: 1rem;
     font-family: var(--main-text);
@@ -113,13 +113,6 @@ main {
 
 #question {
     margin-top: 5px;
-    margin-bottom: 1rem;
-    font-size: 1rem;
-    font-family: var(--main-text);
-}
-
-#r1, #r2, #r3, #r4, #r5, #r6, #r7, #r8 {
-    margin-top: 2rem;
     margin-bottom: 1rem;
     font-size: 1rem;
     font-family: var(--main-text);
@@ -147,6 +140,31 @@ button {
     border-radius: 1rem;
 }
 
+#result {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-top: 5px;
+}
+
+#r1, #r2, #r3, #r4, #r5, #r6, #r7, #r8 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-family: var(--main-text);
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    text-align: center;
+}
+
+
+
 /*navbar*/
 
 nav {
@@ -161,7 +179,6 @@ nav {
     flex-direction: row;
     align-content: center;
     justify-content: center;
-    height: 5rem;
     padding: 10px 0;
 }
 
@@ -233,4 +250,21 @@ footer>nav>a:hover {
         background-color: var(--couleur5);
         scale: 110%;
     }
+
+
+    #result {
+        margin-top: 3rem;
+    }
+
+    a {
+       color: var(--couleur4);
+    }
+
+    a:hover {
+        color: var(--couleur5);
+        scale: 200%;
+    }
 }
+
+
+
