@@ -96,7 +96,6 @@ function displayResult() {
             restaurant.far === responses.far &&
             restaurant.meat === responses.meat);
     });
-    /* window.location.replace(`/${matchingRestaurants[0].id}.html`)*/
 
     // Modify result pins
     pins.forEach(pin => {
@@ -167,14 +166,6 @@ function handleUserInput(userInput) {
                 // into the displayResult() function - allows question array reordering and makes
                 // better semantic sense for this logic to be part of that function.
 
-                // pins.forEach(pin => {
-                //     pin.addEventListener('click', () => {
-                //         let url = pin.parentElement.querySelector('a').getAttribute('href');
-                //         window.open(url, '_blank');
-                //     });
-                //     pin.setAttribute('r', '20');
-
-                // });
             }
             if (userInput === true) {
                 document.querySelectorAll('.pin4, .pin3, .pin7, .pin5').forEach(pin => {
@@ -183,16 +174,6 @@ function handleUserInput(userInput) {
 
                     }
                 });
-                // pins.forEach(pin => {
-                //     pin.addEventListener('click', () => {
-                //         let url = pin.parentElement.querySelector('a').getAttribute('href');
-                //         window.open(url, '_blank');
-                //     });
-                //     pin.setAttribute('r', '20');
-
-
-                // });
-
             }
             break;
     }
@@ -218,5 +199,5 @@ noButton.addEventListener("click", () => {
     handleUserInput(false);
 });
 
-// questions.sort((a, b) => 0.5 - Math.random());
+questions.sort((a, b) => 0.5 - Math.random());
 displayQuestion();
