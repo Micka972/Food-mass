@@ -46,6 +46,12 @@ h1 {
     margin-left: 1rem;
 }
 
+/* @media only screen and (min-width: 550px) {
+    h1 {
+        font-size: 1rem;
+    }
+} */
+
 header {
     background-color: var(--couleur1);
     display: flex;
@@ -82,6 +88,12 @@ h2 {
     border-right: 2px solid black;*/
 }
 
+@media only screen and (min-width: 550px) {
+    h2 {
+        font-size: 2rem;
+    }
+}
+
 
 p {
     text-align: center;
@@ -100,6 +112,16 @@ p {
     border-left: 2px solid black;
     border-right: 2px solid black;*/
 
+}
+
+@media only screen and (min-width: 550px) {
+    p {
+        font-size: 1.2rem;
+    }
+}
+
+.questionblock {
+    width: 5rem;
 }
 
 
@@ -142,7 +164,7 @@ p {
     font-family: var(--secondary-text);
     color: white;
     border: 1px solid black;
-    font-size: xx-large;
+    font-size: 1rem;
     justify-content: center;
     align-items: center;
     border-radius: 1rem;
@@ -176,13 +198,13 @@ main {
     bottom: 5rem;
     height: 80vh;*/
 
-    padding-top: 3rem;
+    padding-top: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: var(--couleur3);
-    gap: 4rem;
+    gap: 2rem;
     /*max-height: 80%;*/
     /* padding: 100px 15px 100px 15px; */
 
