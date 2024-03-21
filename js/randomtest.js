@@ -1,4 +1,4 @@
-let pins = document.querySelectorAll('.pin1, .pin2, .pin3 .pin4, .pin5, .pin6, .pin7, .pin8');
+let pins = document.querySelectorAll('.pin1, .pin2, .pin3, .pin4, .pin5, .pin6, .pin7, .pin8');
 
 let restaurants = [
     {
@@ -98,6 +98,17 @@ function displayResult() {
     });
     /* window.location.replace(`/${matchingRestaurants[0].id}.html`)*/
 
+    // Modify result pins
+    pins.forEach(pin => {
+        pin.addEventListener('click', () => {
+            let url = pin.parentElement.querySelector('a').getAttribute('href');
+            window.open(url, '_blank');
+        });
+        pin.setAttribute('r', '20');
+
+
+    });
+
     console.log("Matching Restaurants:", matchingRestaurants);
     for (let i = 0; i < matchingRestaurants.length; i++) {
         document.getElementById(matchingRestaurants[i].id).style.display = "block";
@@ -107,8 +118,11 @@ function displayResult() {
 
 
 function handleUserInput(userInput) {
-    switch (currentIndex) {
-        case 0://cher
+    // changed from checking on currentIndex of questions (i.e. always dependent on order of questions array)
+    // to checking case on the criteria value. This means array can be re-ordered without breaking the rest
+    // of the code, and the conditions read semantically more accurately. 
+    switch (questions[currentIndex].criteria) {
+        case "expensive"://cher
             if (userInput === false) {
                 document.querySelectorAll('.pin6, .pin2,  .pin3, .pin4').forEach(pin => {
                     if (pin.style.display !== 'none') {
@@ -124,7 +138,7 @@ function handleUserInput(userInput) {
                 });
             }
             break;
-        case 1://loin
+        case "far"://loin
             if (userInput === false) {
                 document.querySelectorAll(' .pin4, .pin5, .pin6, .pin1').forEach(pin => {
                     if (pin.style.display !== 'none') {
@@ -140,7 +154,7 @@ function handleUserInput(userInput) {
                 });
             }
             break;
-        case 2: // Viande
+        case "meat": // Viande
             if (userInput === false) {
                 document.querySelectorAll('.pin6, .pin2, .pin1, .pin8').forEach(pin => {
                     if (pin.style.display !== 'none') {
@@ -148,14 +162,19 @@ function handleUserInput(userInput) {
 
                     }
                 });
-                pins.forEach(pin => {
-                    pin.addEventListener('click', () => {
-                        let url = pin.parentElement.querySelector('a').getAttribute('href');
-                        window.open(url, '_blank');
-                    });
-                    pin.setAttribute('r', '20');
 
-                });
+                // Loops which were previously always run on item [2] in the array are moved 
+                // into the displayResult() function - allows question array reordering and makes
+                // better semantic sense for this logic to be part of that function.
+
+                // pins.forEach(pin => {
+                //     pin.addEventListener('click', () => {
+                //         let url = pin.parentElement.querySelector('a').getAttribute('href');
+                //         window.open(url, '_blank');
+                //     });
+                //     pin.setAttribute('r', '20');
+
+                // });
             }
             if (userInput === true) {
                 document.querySelectorAll('.pin4, .pin3, .pin7, .pin5').forEach(pin => {
@@ -164,15 +183,15 @@ function handleUserInput(userInput) {
 
                     }
                 });
-                pins.forEach(pin => {
-                    pin.addEventListener('click', () => {
-                        let url = pin.parentElement.querySelector('a').getAttribute('href');
-                        window.open(url, '_blank');
-                    });
-                    pin.setAttribute('r', '20');
+                // pins.forEach(pin => {
+                //     pin.addEventListener('click', () => {
+                //         let url = pin.parentElement.querySelector('a').getAttribute('href');
+                //         window.open(url, '_blank');
+                //     });
+                //     pin.setAttribute('r', '20');
 
 
-                });
+                // });
 
             }
             break;
@@ -199,15 +218,5 @@ noButton.addEventListener("click", () => {
     handleUserInput(false);
 });
 
-
+// questions.sort((a, b) => 0.5 - Math.random());
 displayQuestion();
-
-
-
-
-
-
-
-
-
-
