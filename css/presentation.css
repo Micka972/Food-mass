@@ -104,26 +104,28 @@ main h2{
   /* z-index: 0; */
 /*} */
 
-
-#lieu-unique, #honore, #canelle, #mangouste, #ichizen, #lion-agneau, #square, #cantine-fermiere  {
+.container, #lieu-unique, #honore, #canelle, #mangouste, #ichizen, #lion-agneau, #square, #cantine-fermiere {
+  /* width: 100%;
+  height: 100%; */
+  border: 1px solid transparent;
+  object-fit: fill;
+  overflow: hidden;
   flex-direction: column;
   text-align: center;
   justify-content: center;
   align-items: center;
-  height: auto;
-  width: auto;
   /* border-radius: 40px; */
-  padding-bottom: 5rem;
+  /* padding-bottom: 5rem; */
   max-width: 100%;
-  max-height: 100%;
+  max-height: 150%;
   justify-content: center;
   align-items: center;
   grid-row: 2 / 3;
   position: relative;
   top: -3.3rem;
-  padding: 2rem;
-  margin-top: -1.8rem;
-  margin-left: 16px;
+  /* padding: 2rem; */
+  /* margin-top: -1.8rem;
+  margin-left: 16px; */
   /* z-index: 0; */
 }
 
@@ -178,20 +180,60 @@ nav {
   bottom: 10px;
 }
 
-/* .nav-item:before {
-  content: "";
-  position: absolute;
-  bottom: -6px;
-  background-color: #f3eeee;
-  height: 5px;
-  width: 100%;
-  border-radius: 8px 8px 0 0;
-  left: 0;
-  transition: .3s;
-} */
+@media only screen and (min-width: 500px) {
+  header{
+    height: auto;
+  }
 
-.nav-item:not(.is-active):hover:before {
-  bottom: 0;
+  main {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  main h2 {
+    width: 65%;
+    height: 3rem;
+    font-size: 1.5rem;
+    margin: 1.3rem;
+    margin-left: 100px;
+  }
+
+  #title1, #title2, #title3, #title4, #title5, #title6, #title7, #title8 {
+    height: 30%;
+    margin-top: 4rem;
+    margin-left: 20%;
+    margin-bottom: -2%;
+  }
+
+  .badge {
+    left: 90%;
+    width: 50px;
+  }
+
+  .container {
+  width: 100%;
+  height: 70%;
+  margin-left: 102%;
+  object-fit: cover;
+  z-index: 2;
+  }
+
+  #lieu-unique, #honore, #canelle, #mangouste, #ichizen, #lion-agneau, #square, #cantine-fermiere {
+  width: 100%;
+  height: 100%;
+  }
+
+  #description1, #description2, #description3, #description4, #description5, #description6, #description7, #description8 {
+    width: 45%;
+    height: 40%;
+    margin-bottom: 3.5rem;
+    bottom: 20%;
+    left: -1%;
+    margin: 3%;
+  }
+
+nav {
+  height: auto;
+  z-index: 3;
 }
 
 .nav-indicator {
@@ -211,56 +253,7 @@ footer>nav>a {
 footer>nav>a:hover {
   text-decoration: none;
   color: black;
-  transform: scale(130%);
+  transform: scale(1.3);
   cursor: pointer;
-}
-
-@media only screen and (min-width: 500px) {
-  header{
-    height: 6rem;
-  }
-
-  main {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  main h2 {
-    width: 65%;
-    height: 3rem;
-    font-size: 1.5rem;
-    margin: 1.3rem;
-    margin-left: 100px;
-  }
-
-  #title1, #title2, #title3, #title4, #title5, #title6, #title7, #title8 {
-    height: auto;
-    margin-top: 2.8rem;
-    margin-left: 25%;
-  }
-
-  .badge {
-    left: 90%;
-    width: 50px;
-  }
-
-  #lieu-unique, #honore, #canelle, #mangouste, #ichizen, #lion-agneau, #square, #cantine-fermiere {
-  width: 120%;
-  height: 100%;
-  z-index: 2;
-  margin-left: 108%;
-  margin-top: -20%;
-  padding: 10%;
-  margin-bottom: 3.2%;
-  }
-
-  #description1, #description2, #description3, #description4, #description5, #description6, #description7, #description8 {
-    width: 50%;
-    height: 40%;
-    margin-bottom: 3.5rem;
-  }
-
-nav {
-  height: auto;
-  z-index: 3;
 }
 }
