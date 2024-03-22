@@ -12,31 +12,15 @@
     --second-color-head-text: #426a5a;
 }
 
-/*:root {
-    --main-color-box: #f2c57c;
-    --second-color-head-text: #426a5a;
-    --background-color: #7fb865;
-    --highlight-color: #ef6f6c;
-    --couleur6: #000000;
-    --main-text: "Roboto";
-    --secondary-text: "Raleway";
-}*/
-
 * {
     box-sizing: border-box;
 
 }
 
-
 body {
     margin: 0;
     background-color: var(--couleur3);
-    /* display: flex;
-    flex-direction: column;
-    align-items: stretch; */
-    /*add pro height*/
     height: 100svh;
-
 }
 
 h1 {
@@ -46,12 +30,6 @@ h1 {
     margin-left: 1rem;
 }
 
-/* @media only screen and (min-width: 550px) {
-    h1 {
-        font-size: 1rem;
-    }
-} */
-
 header {
     background-color: var(--couleur1);
     display: flex;
@@ -60,11 +38,8 @@ header {
     align-items: center;
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
-    /*added proportional height*/
     height: 10svh;
     width: 100%;
-    /* top: 0;
-    position: fixed; */
 }
 
 .logo {
@@ -77,17 +52,11 @@ h2 {
     font-family: var(--main-text);
     color: var(--couleur4);
     font-size: 1.5rem;
-    /*background-color: white;*/
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /*border: 1px solid black;*/
     border-radius: 1rem;
-    /*padding: 5px 15px 5px 15px;*/
-    /* border-top: 2px solid black;
-    border-left: 2px solid black;
-    border-right: 2px solid black;*/
 }
 
 @media only screen and (min-width: 550px) {
@@ -96,23 +65,16 @@ h2 {
     }
 }
 
-
 p {
     text-align: center;
     font-family: var(--secondary-text);
     color: var(--couleur4);
     font-size: 1rem;
-    /* background-color: white;*/
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* border: 1px solid black;*/
     border-radius: 1rem;
-    /*padding: 5px 15px 5px 15px;*/
-    /*border-top: 2px solid black;
-    border-left: 2px solid black;
-    border-right: 2px solid black;*/
 
 }
 
@@ -141,39 +103,20 @@ p {
 }
 
 
-/* div {
 
-    background-color: var(--main-color-box);
-
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    justify-content: center;
-    align-items: center;
-} */
 
 .text-div {
 
     background-color: var(--couleur1);
     width: 90%;
-    /* height: 30%; */
     border-radius: 1rem;
     padding-left: 2rem;
     border: 1px solid black;
     padding: 5px 15px 5px 15px;
-    /*border-top: 2px solid black;
-    border-left: 2px solid black;
-    border-right: 2px solid black;*/
 }
 
-/* .button-div {
-    border-top-left-radius: 2rem;
-    border-top-right-radius: 2rem;
-    border-color: black 5px;
-
-} */
-
 .lancez-button {
-    /* display: flex; */
+
     padding: 1rem 2rem;
     background-color: var(--couleur4);
     font-family: var(--secondary-text);
@@ -183,9 +126,6 @@ p {
     justify-content: center;
     align-items: center;
     border-radius: 1rem;
-    /*border-top: 2px solid black;
-    border-left: 2px solid black;
-    border-right: 2px solid black;*/
     transition: all 200ms ease-in-out;
 
 }
@@ -201,17 +141,11 @@ p {
     }
 }
 
-
-
 main {
     height: 80svh;
 }
 
 .main-body {
-    /* margin: 0; */
-    /* position: sticky;
-    bottom: 5rem;
-    height: 80vh;*/
 
     padding-top: 1rem;
     display: flex;
@@ -220,19 +154,7 @@ main {
     align-items: center;
     background-color: var(--couleur3);
     gap: 2rem;
-    /*max-height: 80%;*/
-    /* padding: 100px 15px 100px 15px; */
-
-
 }
-
-/*@media only screen and (min-width: 550px) {
-    .main-body {
-        gap: 6rem;
-        padding: 100px 15px 100px 15px;
-
-    }
-}*/
 
 .main-text {
     background-color: var(--couleur1);
@@ -243,32 +165,12 @@ main {
     border: 1px solid black;
     padding: 5px 15px 5px 15px;
     display: flex;
-    /* direction: column; */
     justify-content: center;
-    /*border-top: 2px solid black;
-    border-left: 2px solid black;
-    border-right: 2px solid black;*/
-
-
 }
 
 .main-body>div {
     max-width: 720px;
 }
-
-/* .white-box-one {
-    width: 50%;
-    height: 30%;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-
-    justify-content: center;
-    align-items: center;
-    border: 3px solid black;
-    border-radius: 15px;
-} */
-
 
 footer {
     display: flex;
@@ -277,12 +179,7 @@ footer {
 }
 
 nav {
-    /*comment out fix*/
-    /* position: fixed;
-    bottom: 0; */
     width: 100%;
-    /* height: 5rem; */
-    /*add pro height*/
     height: 10svh;
     background-color: var(--couleur1);
     border-top-right-radius: 1rem;
@@ -293,9 +190,6 @@ nav {
     justify-content: center;
     padding: 10px 0;
 }
-
-
-
 
 .nav-item {
     color: #67656d;
