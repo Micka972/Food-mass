@@ -1,13 +1,15 @@
+//déclaration des variables; en premier les pins du plan et en suivant le restaurants et leurs éléments de tri.
+
 let pins = document.querySelectorAll('.pin1, .pin2, .pin3, .pin4, .pin5, .pin6, .pin7, .pin8');
 
 let restaurants = [
     {
-        name: "LU",
-        id: "r1",
-        pin: "pin1",
-        expensive: false,
-        far: true,
-        meat: true,
+        name: "LU",// le restaurant
+        id: "r1",// son id de référence
+        pin: "pin1",// sa pin de référence sur le plan
+        expensive: false, // initialement "expensive" etait prévu pour evaluer le prix, il s'agit finalement de "à emporter"
+        far: true, // "far" correspont à la distance
+        meat: true,// et "meat" correspond à "végétarien"
     },
     {
         name: "Honoré",
@@ -66,7 +68,7 @@ let restaurants = [
         meat: true,
     },
 ];
-
+// ci dessous, les trois questions:
 let questions = [
     { criteria: "expensive", displayText: "à emporter ?" },
     { criteria: "far", displayText: "à plus de 2mn ?" },
@@ -74,19 +76,19 @@ let questions = [
 ];
 
 
-
+// ci dessous, les déclarations pour l'indexage, les différantes réponses et les deux bouttons de réonses
 let currentIndex = 0;
 let responses = {};
 let yesButton = document.getElementById("yesButton");
 let noButton = document.getElementById("noButton");
 
-
+// première fonction pour les questions :
 function displayQuestion() {
     let questionElement = document.getElementById("question");
     questionElement.innerHTML = questions[currentIndex].displayText;
 }
 
-
+//fonction qui affiche les différentes question les une apres les autres et les correspondences
 function displayResult() {
     document.getElementById("quiz").style.display = "none";
 
@@ -97,17 +99,21 @@ function displayResult() {
             restaurant.meat === responses.meat);
     });
 
-    // Modify result pins
+    // ici les pins restantes comme réponse finale sont rendues cliquable et redirigent vers au nouvel onglet,
+    //elles sont grossient pour faciliter le click et la page se recharge automatiquement pour un nouveau tour de jeu:
     pins.forEach(pin => {
         pin.addEventListener('click', () => {
             let url = pin.parentElement.querySelector('a').getAttribute('href');
             window.open(url, '_blank');
+            setTimeout(() => {
+                location.reload();
+            }, 100);
         });
         pin.setAttribute('r', '20');
 
 
     });
-
+// ci dessous le restaurant trouvé est affiché avec son lien de redirrection:
     console.log("Matching Restaurants:", matchingRestaurants);
     for (let i = 0; i < matchingRestaurants.length; i++) {
         document.getElementById(matchingRestaurants[i].id).style.display = "block";
@@ -115,7 +121,7 @@ function displayResult() {
     }
 }
 
-
+//ci dessous, la logique permettant faire disparaitre de la carte les restaurants éliminés au fur et à mesure
 function handleUserInput(userInput) {
     // changed from checking on currentIndex of questions (i.e. always dependent on order of questions array)
     // to checking case on the criteria value. This means array can be re-ordered without breaking the rest
@@ -179,8 +185,6 @@ function handleUserInput(userInput) {
     }
 
 
-
-
     responses[questions[currentIndex].criteria] = userInput;
     console.log("Current Responses:", responses);
     currentIndex++;
@@ -191,6 +195,7 @@ function handleUserInput(userInput) {
     }
 }
 
+//ci dessous, les clicks de l'utilisateurs génèrent les réponses appropriées
 yesButton.addEventListener("click", () => {
     handleUserInput(true);
 });
@@ -198,6 +203,17 @@ yesButton.addEventListener("click", () => {
 noButton.addEventListener("click", () => {
     handleUserInput(false);
 });
-
+//Ci dessous méthode de rendomisation de l'ordre des questions
 questions.sort((a, b) => 0.5 - Math.random());
 displayQuestion();
+
+const reloadLinks = document.querySelectorAll('.reload-link');
+
+reloadLinks.forEach(link => {
+    link.addEventListener('click', function(event) {
+        // Recharge la page après un court délai
+        setTimeout(() => {
+            location.reload();
+        }, 100);
+    });
+});
