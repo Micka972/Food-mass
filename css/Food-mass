@@ -1,7 +1,0 @@
-.images {
-    display: flex;
-}
-#caroussel {
-    width: 640px;
-    overflow: auto;
-}

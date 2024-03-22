@@ -2,6 +2,9 @@
 
 let pins = document.querySelectorAll('.pin1, .pin2, .pin3, .pin4, .pin5, .pin6, .pin7, .pin8');
 
+// set up an array of restaurant objects with the chosen 
+// criteria set to true or false.
+
 let restaurants = [
     {
         name: "LU",// le restaurant
@@ -68,6 +71,9 @@ let restaurants = [
         meat: true,
     },
 ];
+// set up an array of question objects linking criteria to appropriate q.
+// string doesn't work as no ref point for pc. 
+// key value pair needed
 // ci dessous, les trois questions:
 let questions = [
     { criteria: "expensive", displayText: "à emporter ?" },
@@ -75,6 +81,11 @@ let questions = [
     { criteria: "meat", displayText: "végétarien ?" },
 ];
 
+// set up variables 
+// required to iterate through q
+// empty object variable for response - use variable as need to 
+// ref input value against question.
+// set up refs to the buttons on html.
 
 // ci dessous, les déclarations pour l'indexage, les différantes réponses et les deux bouttons de réonses
 let currentIndex = 0;
@@ -82,16 +93,27 @@ let responses = {};
 let yesButton = document.getElementById("yesButton");
 let noButton = document.getElementById("noButton");
 
+// declare function to display current q.
+// line 2 provides functionality to ref just the question(.displaytext)
+// against the current index value
+
 // première fonction pour les questions :
 function displayQuestion() {
     let questionElement = document.getElementById("question");
     questionElement.innerHTML = questions[currentIndex].displayText;
 }
 
+// declare function to display result set to none as
+//  we do not want to display at first
 //fonction qui affiche les différentes question les une apres les autres et les correspondences
 function displayResult() {
     document.getElementById("quiz").style.display = "none";
 
+    // inside function, declare variable to store matches to user input.
+    // filter will return an array(can only be used on an array - takes callback function as param.)
+    // param of restaurant - will look at each restaurant object in turn
+    // filter must return boolean - i.e using algorithm only return if ALL
+    //  criteria match user input
 
     let matchingRestaurants = restaurants.filter((restaurant) => {
         return (restaurant.expensive === responses.expensive &&
@@ -113,7 +135,7 @@ function displayResult() {
 
 
     });
-// ci dessous le restaurant trouvé est affiché avec son lien de redirrection:
+    // ci dessous le restaurant trouvé est affiché avec son lien de redirrection:
     console.log("Matching Restaurants:", matchingRestaurants);
     for (let i = 0; i < matchingRestaurants.length; i++) {
         document.getElementById(matchingRestaurants[i].id).style.display = "block";
@@ -184,6 +206,9 @@ function handleUserInput(userInput) {
             break;
     }
 
+    // function to take the criteria of questions array and its current index
+    // and to fill the empty responeses object with the key value pairs.
+    // increment to next question then display next question or result.
 
     responses[questions[currentIndex].criteria] = userInput;
     console.log("Current Responses:", responses);
@@ -194,7 +219,8 @@ function handleUserInput(userInput) {
         displayQuestion();
     }
 }
-
+// adds click listeners functionality to buttons and
+//  assigns the boolean true or false accordingly
 //ci dessous, les clicks de l'utilisateurs génèrent les réponses appropriées
 yesButton.addEventListener("click", () => {
     handleUserInput(true);
@@ -204,13 +230,19 @@ noButton.addEventListener("click", () => {
     handleUserInput(false);
 });
 //Ci dessous méthode de rendomisation de l'ordre des questions
+//For each item in the array, you return
+//a positive or negative number from the callback
+//which determines whether or not a gets swapped with b.
 questions.sort((a, b) => 0.5 - Math.random());
+
+// calls function to display 1st q - at end as it will be done first.
+
 displayQuestion();
 
 const reloadLinks = document.querySelectorAll('.reload-link');
 
 reloadLinks.forEach(link => {
-    link.addEventListener('click', function(event) {
+    link.addEventListener('click', function (event) {
         // Recharge la page après un court délai
         setTimeout(() => {
             location.reload();
