@@ -39,7 +39,7 @@ header {
     align-items: center;
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
-    height: 5rem;
+    height: 10svh;
     width: 100%;
 }
 
@@ -55,6 +55,7 @@ main {
     align-items: center;
 }
 
+/*map*/
 .map-container {
     position: relative;
     background-color: var(--couleur7);

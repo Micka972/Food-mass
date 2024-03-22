@@ -5,11 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="abba06e6-4825-44f0-9050-640fb699c9d7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/img/qrcode_micka972.github.io.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.html" beforeDir="false" afterPath="$PROJECT_DIR$/app.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/Food-mass" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/randomtest.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/randomtest.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/rootest.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/rootest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/fichier.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/header.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/navbar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/quiz.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/r8.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fichier.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/header.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/headerfooder/image/logoFOODER.png" beforeDir="false" afterPath="$PROJECT_DIR$/headerfooder/image/logoFOODER.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logoFOODER.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test map/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/test map/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test map/.idea/dist.iml" beforeDir="false" afterPath="$PROJECT_DIR$/test map/.idea/dist.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test map/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test map/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test map/assets/Sans-titre-2024-03-09-1555.png" beforeDir="false" afterPath="$PROJECT_DIR$/test map/assets/Sans-titre-2024-03-09-1555.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test map/assets/Sans-titre-2024-03-09-15552.png" beforeDir="false" afterPath="$PROJECT_DIR$/test map/assets/Sans-titre-2024-03-09-15552.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test map/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/test map/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test map/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/test map/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +34,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -34,32 +50,39 @@
   &quot;associatedIndex&quot;: 7
 }</component>
   <component name="ProjectId" id="2dMvlcMn5KKMEVGZRk9vCBy467T" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;features/pageapp&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/stevenbachimont/Desktop/fooder/Food-mass&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "features/pageapp",
+    "last_opened_file_path": "/Users/stevenbachimont/Desktop/fooder/Food-mass",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/js" />
       <recent name="$PROJECT_DIR$/img" />
+      <recent name="$PROJECT_DIR$/js" />
       <recent name="$PROJECT_DIR$/css" />
     </key>
   </component>
@@ -93,6 +116,7 @@
       <workItem from="1711011789054" duration="5062000" />
       <workItem from="1711028174848" duration="5561000" />
       <workItem from="1711045102425" duration="2668000" />
+      <workItem from="1711098095615" duration="3614000" />
     </task>
     <servers />
   </component>
@@ -141,5 +165,8 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
